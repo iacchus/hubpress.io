@@ -865,7 +865,7 @@ a.fn-item.active {
 }
 
 /* Create a bouncing scroll-down arrow on homepage with cover image */
-.scroll-down {
+#header-arrow {
     display: block;
     position: absolute;
     z-index: 100;
@@ -885,7 +885,7 @@ a.fn-item.active {
 }
 
 /* Stop it bouncing and increase contrast when hovered */
-.scroll-down:hover {
+#header-arrow:hover {
     color: #fff;
     -webkit-animation: none;
     animation: none;
