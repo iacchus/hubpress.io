@@ -5,12 +5,12 @@
     "branch": "master"
   },
   "site": {
-    "title": "Iacchus Mercurius HubPress",
-    "description": "This is a test weblog",
+    "title": "Iacchus Mercurius Weblog",
+    "description": "This is a test weblog on philosophy",
     "postsPerPage": "15"
   },
   "socialnetwork": {},
   "theme": {
-    "name": "saga"
+    "name": "ghostscroll"
   }
 }
