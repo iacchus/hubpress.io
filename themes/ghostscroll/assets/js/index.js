@@ -19,6 +19,9 @@ var $sitehead = $('#site-head');
 		}, 1000);
 	}
 	$(document).ready(function(){
+        
+        // FitVids for responsive videos
+        $('.post-content').fitVids();
 	 
 		$postholder.each(function (e) {
 			if(e % 2 != 0)
@@ -43,19 +46,22 @@ var $sitehead = $('#site-head');
 		$('#header-arrow').click(function () {
 			srcTo($first);
 		});
+        $('#totop-arrow').click(function () {
+            srcTo($sitehead);
+        });
 
 		$('.post-title').each(function () {
 			var t = $(this).text();
 			var index = $(this).parents('.post-holder').index();
 			$fnav.append("<a class='fn-item' item_index='"+index+"'>"+t+"</a>")
 			$(this).parents('article').attr('id',t.toLowerCase().split(' ').join('-'));
-			$('.fn-item').click(function () {
+			$('.fn-item').last().click(function () {
 				var i = $(this).attr('item_index');
 				var s = $(".post[item_index='"+i+"']");
 
 				$('html, body').animate({
 					scrollTop: s.offset().top
-				}, 400);
+				}, 0);
 
 			});
 		});
@@ -67,13 +73,15 @@ var $sitehead = $('#site-head');
 				var g = $sitehead.offset().top;
 				var h = $sitehead.offset().top + $sitehead.height()-100;
 				
-				var paralex = 30 + w/13 + "%";
-				$sitehead.css("background-position-y", paralex);
-
+				/*var paralex = 30 + w/13 + "%";
+    			$sitehead.css("background-position-y", paralex); */
+                
+    			$sitehead.css("background-position-y");
+                
 				if(w >= g && w<=h) {
 					$('.fixed-nav').fadeOut('fast');
 				} else if($(window).width()>500) {
-					$('.fixed-nav').fadeIn('fast');
+					$('.fixed-nav').fadeIn('slow');
 				}
 
 				$post.each(function () {

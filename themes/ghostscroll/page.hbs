@@ -13,9 +13,9 @@
                 {{/if}}
             </a>
         <h1 class="blog-title">{{post.title}}</h1>
-        {{#post}}{{#if tags}}<h2 class="blog-description">TAGS: {{tags separator=", "}}</h2>{{/if}}{{/post}}
-        <a class='btn first'>read post</a>
-            <a class='btn' href="{{url}}#disqus_thread">comments</a>
+        <h2 class="blog-description">{{@blog.description}}</h2>
+        <a class='btn first'>scroll to page</a>
+            <a class='btn' href="{{@blog.url}}">back home</a>
             
          <h4 id="search"></h4>
         <i class="fa fa-search"><input class="blog-description" id="search-field" placeholder=" looking for something?"/></i>
@@ -39,7 +39,7 @@
       </span></a>
     </div>
 
-        <article id="{{uuid}}" class="{{post_class}} first">
+        <article class="{{post_class}} first">
 
         {{! Each post has the blog logo at the top, with a link back to the home page }}
 
@@ -48,15 +48,11 @@
 
         {{! Everything below outputs content of the the post which has been published }}
 
-		<span class="post-meta"><i class="fa fa-leaf"></i> {{title}}  <i class="fa fa-calendar-o"></i> <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time> {{#if tags}} <i class="fa fa-tag"></i> {{tags separator=", "}}{{/if}} </span>
+		<span class="post-meta"><i class="fa fa-leaf"></i> {{title}} {{#if tags}} <i class="fa fa-tag"></i> {{tags separator=", "}}{{/if}} </span>
 
         <section class="post-content">
             {{content}}	
         </section>
-        
-       <footer class="post-footer">
-          <div id="disqus_thread"></div>
-          </footer>
         
         <footer class="post-footer" itemscope itemtype="http://schema.org/Person">
 
@@ -74,7 +70,7 @@
                 {{#if bio}}
                     <p>{{bio}}</p>
                 {{else}}
-                    <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+                    <p>Read <a href="{{url}}">all posts</a> by this author.</p>
                 {{/if}}
                 <div class="author-meta">
                     {{#if location}}<span class="author-location fa fa-location-arrow"> {{location}}</span>{{/if}}
@@ -82,8 +78,6 @@
                     {{/author}}
                 </div>
             </section>
-            
-            {{#if tags}}<section class="author">{{> "recommend"}}</section>{{/if}}
             
             <section class="share">
                 <h4>Share this post</h4>
@@ -102,10 +96,9 @@
             </section>
 
         </footer>
-    
+
+        {{/post}}
+
     </article>
 
-    <script type="text/javascript" src= "{{asset "js/dsq_comments.js"}}"></script>
-    
 </main>
-{{/post}}
