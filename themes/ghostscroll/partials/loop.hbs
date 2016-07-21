@@ -5,12 +5,12 @@
     <div class='post-holder'>
         
             {{#if @first}}
-                <article id="{{uuid}}" class="{{post_class}} first" itemscope itemtype="http://schema.org/Article">
+                <article id="{{uuid}}" class="{{post_class}} first" itemscope itemtype="https://schema.org/Article">
             {{else}}
                 {{#if @last}}
-                    <article id="{{uuid}}" class="{{post_class}} last" itemscope itemtype="http://schema.org/Article">
+                    <article id="{{uuid}}" class="{{post_class}} last" itemscope itemtype="https://schema.org/Article">
                 {{else}}
-                    <article id="{{uuid}}" class="{{post_class}}" itemscope itemtype="http://schema.org/Article">
+                    <article id="{{uuid}}" class="{{post_class}}" itemscope itemtype="https://schema.org/Article">
                 {{/if}}
             {{/if}}
         
@@ -28,7 +28,7 @@
                     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <i class="fa fa-facebook"></i><span class="hidden">Facebook</span>
                 </a>
-                <a class='btn' href="http://twitter.com/share?text={{title}}&url={{@blog.url}}{{url}}"
+                <a class='btn' href="https://twitter.com/share?text={{title}}&url={{@blog.url}}{{url}}"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <i class="fa fa-twitter"></i><span class="hidden">Twitter</span>
                 </a>
