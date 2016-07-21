@@ -762,7 +762,7 @@ a.fn-item.active {
 }
 
 .post-meta, .post-meta a {
-    color: #3A4145;
+    color: #333;
     text-decoration: none;
 }
 /*.odd .post-meta, .odd .post-meta a {
