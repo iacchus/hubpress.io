@@ -525,7 +525,7 @@ li.footnote > p {
     margin-bottom: 0rem;
     text-align: center;
     color: #fff;
-    background: rgb(255,255,255) no-repeat center center;
+    background: rgb(52,52,102) no-repeat center center;
     background-size: cover;
 //    background-attachment: fixed;
 }
@@ -721,7 +721,6 @@ a[title]:hover:after
 .fixed-nav {
     max-width: 280px;
     width: 280px;
-    display: none;
     position: fixed;
     top: 40px;
     left: 2%;
@@ -733,6 +732,7 @@ a[title]:hover:after
     font-weight: normal;
     color: #222;
     //color: rgba(0,0,0,0.7);
+    display: none;
 }
 a.fn-item {
     display: block;
