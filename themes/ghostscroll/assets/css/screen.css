@@ -516,7 +516,9 @@ li.footnote > p {
     padding: 1.4rem;
     text-align: center;
     color: #fff;
-    background: rgb(52,52,102) no-repeat center center;
+    //background: rgb(52,52,102) no-repeat center center;
+    background: #f0f0f0 no-repeat center center;
+    border-bottom: 1px solid #e0e0e0;
     background-size: cover;
 //    background-attachment: fixed;
 }
