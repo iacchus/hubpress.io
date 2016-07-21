@@ -506,6 +506,21 @@ li.footnote > p {
 //    background-attachment: fixed;
 }
 
+#post-head {
+    position: relative;
+    display: table;
+    width: 100%;
+    //height: 100%;
+    /*margin-bottom: 0rem;*/
+    margin: 0;
+    padding: 1.4rem;
+    text-align: center;
+    color: #fff;
+    background: rgb(52,52,102) no-repeat center center;
+    background-size: cover;
+//    background-attachment: fixed;
+}
+
 #site-head:after {
 
 }
@@ -1283,6 +1298,18 @@ width: 40%;
         margin-bottom: 0rem;
         background-position-y: 50%;
     }
+    
+    #post-head {
+        -webkit-box-sizing: border-box; 
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; 
+        min-height: 100%;
+        //padding: 15% 0;
+        //height: 100%;
+	padding: 1.4rem;
+        margin-bottom: 0rem;
+        background-position-y: 50%;
+    }
 
     .blog-title {
         font-size: 4rem;
@@ -1553,6 +1580,10 @@ width: 40%;
 
     #site-head {
         padding: 10% 0;
+    }
+    #post-head {
+        //padding: 10% 0;
+        padding: 1.4rem;
     }
     #header-arrow {
         display: none;
