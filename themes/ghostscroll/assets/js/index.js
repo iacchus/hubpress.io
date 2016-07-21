@@ -71,19 +71,14 @@ var $sitehead = $('#site-head');
 			$(window).scroll( function () {
 				var w = $(window).scrollTop();
 				var g = $sitehead.offset().top;
-				var h = $sitehead.offset().top + $sitehead.height()-100;
+				var h = $sitehead.offset().top + $(this).height()-100;
 				
-				/*var paralex = 30 + w/13 + "%";
-    			$sitehead.css("background-position-y", paralex); */
                 
-    			$sitehead.css("background-position-y");
+    		//	$sitehead.css("background-position-y");
                 
 				if(w >= g && w<=h) {
 					$('.fixed-nav').fadeOut('fast');
-				} else if($(window).width()>500) {
-					$('.fixed-nav').fadeIn('slow');
-				}
-
+				} 
 				$post.each(function () {
 					var f = $(this).offset().top;
 					var b = $(this).offset().top + $(this).height();
