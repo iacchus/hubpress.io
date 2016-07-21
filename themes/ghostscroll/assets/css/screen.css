@@ -94,6 +94,7 @@ body {
     font-size: 1.8rem;
     //line-height: 1.4em;
     color: #222;
+    margin: 0;
 }
 a.fa {
     text-decoration: none;
@@ -212,32 +213,6 @@ a.btn span {
 	height: 1.6rem;
 	line-height: 1.6rem;
 }
-
-/*a.btn:hover span.first { -webkit-animation: move-seed 5s ease infinite; }
-a.btn:hover span.second { -webkit-animation: move-community 5s ease infinite; }
-a.btn:hover span.third { -webkit-animation: move-author 5s ease infinite; }
-
-@-webkit-keyframes move-seed
-{
-	0% { -webkit-transform: rotate(0deg); }
-	25% { -webkit-transform: rotate(360deg); }
-	50% { -webkit-transform: rotate(0deg); }
-	75% { -webkit-transform: rotate(-360deg); }
-}
-
-@-webkit-keyframes move-community
-{
-	0% { -webkit-transform: rotate(0deg); }
-	50% { -webkit-transform: rotate(360deg); }
-}
-
-@-webkit-keyframes move-author
-{
-	0% { -webkit-transform: rotate(0deg); }
-	25% { -webkit-transform: rotate(7deg); }
-	50% { -webkit-transform: rotate(0deg); }
-	75% { -webkit-transform: rotate(-11eg); }
-}*/
 
 #header-arrow {
     font-size: 140px;
@@ -564,13 +539,6 @@ li.footnote > p {
 	width: auto;
 
 	display: table-row;
-}
-
-.news-container
-{
-	display: table-cell;
-	width: 100%;
-	padding: 3px 0 3px 3px;
 }
 
 .top-nav
