@@ -601,7 +601,7 @@ span .blog-description #results a {
 #content
 {
 	min-height: 100%;
-	background-color: #22343A;
+	background-color: #ffffff;
 }
 
 .post-holder {
@@ -756,8 +756,8 @@ a.fn-item.active {
 .post-meta {
     display: inline-block;
     margin: 0 0 5px 0;
-    font-family: 'Oswald', 'Open Sans', sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.4rem;
     font-weight: 300;
 }
 
@@ -943,7 +943,7 @@ article.tag-draft > section.post-content:before
     position: relative;
     margin: 6rem 0 0 0;
     padding: 6rem 0 0 0;
-    border-top: #EBF2F6 1px solid;
+    border-top: #cccccc 1px solid;
 }
 
 .post-footer h4 {
@@ -1445,7 +1445,7 @@ width: 40%;
     padding: 6px;
     background: #fff;
     z-index: 2;
-    box-shadow: #E7EEF2 0 0 0 1px;
+    box-shadow: #cccccc 0 0 0 1px;
 }
 
 .author-image .img {
