@@ -1293,7 +1293,7 @@ width: 40%;
         -moz-box-sizing: border-box;
         box-sizing: border-box; 
         min-height: 100%;
-        padding: 15% 0;
+        //padding: 15% 0;
         height: 100%;
         margin-bottom: 0rem;
         background-position-y: 50%;
@@ -1579,7 +1579,7 @@ width: 40%;
     }
 
     #site-head {
-        padding: 10% 0;
+        //padding: 10% 0;
     }
     #post-head {
         //padding: 10% 0;
