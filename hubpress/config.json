@@ -7,6 +7,7 @@
   "site": {
     "title": "The Leet Crafting",
     "description": "This is a weblog on philosophy and arts",
+    "cover": "images/wallhaven-413234.jpg",
     "postsPerPage": "15"
   },
   "socialnetwork": {},
