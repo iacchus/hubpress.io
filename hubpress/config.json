@@ -4,7 +4,13 @@
     "repositoryName": "iacchus.github.io",
     "branch": "master"
   },
+  "site": {
+    "title": "Iacchus Mercurius HubPress",
+    "description": "This is a test weblog",
+    "postsPerPage": "15"
+  },
+  "socialnetwork": {},
   "theme": {
-    "name": "Casper"
+    "name": "casper"
   }
 }
