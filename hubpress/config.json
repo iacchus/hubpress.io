@@ -5,8 +5,8 @@
     "branch": "master"
   },
   "site": {
-    "title": "Iacchus Mercurius Weblog",
-    "description": "This is a test weblog on philosophy",
+    "title": "The Leet Crafting",
+    "description": "This is a weblog on philosophy and arts",
     "postsPerPage": "15"
   },
   "socialnetwork": {},
