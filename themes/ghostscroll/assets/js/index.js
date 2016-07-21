@@ -78,7 +78,10 @@ var $sitehead = $('#site-head');
                 
 				if(w >= g && w<=h) {
 					$('.fixed-nav').fadeOut('fast');
-				} 
+				} else if($(window).width() > 1130) {
+					$('.fixed-nav').fadeIn('slow');
+				}
+
 				$post.each(function () {
 					var f = $(this).offset().top;
 					var b = $(this).offset().top + $(this).height();
