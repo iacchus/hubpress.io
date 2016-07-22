@@ -1032,7 +1032,8 @@ article.tag-draft > section.post-content:before
 
 //.admonitionblock > table > tbody > tr > td.icon
 
-/* GENERAL ADMONITION */
+/* GENERAL ADMONITION (classes that apply to all of them) */
+
 .admonitionblock > table > tbody > tr > td.icon {
     min-width: 8.2rem;
     /* background-color: #43A047 !important; */
@@ -1045,7 +1046,22 @@ article.tag-draft > section.post-content:before
     height: 100%;
 }
 
+.admonitionblock > table > tbody > tr > td.content {
+    background-color: #fff !important;
+    color: #fff;
+}
+
 /* SPECIFIC ADMONITION*/
+
+.admonitionblock.note > table > tbody > tr > td > i:before {
+    content: '\f1fc';
+}
+
+.admonitionblock.note > table > tbody > tr > td.content {
+    background-color: #3F51B5 !important;
+    color: #fff;
+}
+
 
 .admonitionblock.tip > table > tbody > tr > td > i:before {
     content: '\f1bb';
