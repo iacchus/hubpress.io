@@ -1035,6 +1035,7 @@ article.tag-draft > section.post-content:before
 .admonitionblock > table {
     border-spacing: 1px;
     border-radius: 2px;
+    box-shadow: 1px 1px 1px #333;
 }
 
 .admonitionblock > table > tbody > tr > td {
@@ -1152,7 +1153,7 @@ article.tag-draft > section.post-content:before
     color: rgba(255,255,255,0.6);
     text-shadow: 0px 0px #E13E3E, 1px 1px #333;
 
-    content: '\f24a';
+    content: '\f071';
 }
 .admonitionblock.warning > table > tbody > tr > td.content {
     background-color: #B71C1C !important;
