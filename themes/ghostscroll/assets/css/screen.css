@@ -1047,6 +1047,7 @@ article.tag-draft > section.post-content:before
     min-width: 9.6rem;
     background-color: #fff;
     text-align: center;
+    padding-top: 1.6rem;
     /* background-color: #43A047 !important; */
 }
 
