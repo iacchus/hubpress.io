@@ -1044,13 +1044,13 @@ article.tag-draft > section.post-content:before
 .admonitionblock > table > tbody > tr > td.icon {
     min-width: 9.6rem;
     background-color: #fff;
+    text-align: center;
     /* background-color: #43A047 !important; */
 }
 
 .admonitionblock > table > tbody > tr > td > i {
     font-family: 'FontAwesome';
     color: #333;
-    width: 100%;
     height: 100%;
 }
 
@@ -1110,7 +1110,7 @@ article.tag-draft > section.post-content:before
     content: '\f24a';
 }
 .admonitionblock.warning > table > tbody > tr > td.content {
-    background-color: #3F51B5 !important;
+    background-color: ##EF5350 !important;
     color: #fff;
 }
 
