@@ -1034,8 +1034,18 @@ article.tag-draft > section.post-content:before
 
 /* GENERAL ADMONITION (classes that apply to all of them) */
 
+.admonitionblock > table {
+    border-spacing: 1px;
+    border-radius: 2px;
+}
+
+.admonitionblock > table > tbody > tr > td {
+    border: 0;
+}
+
 .admonitionblock > table > tbody > tr > td.icon {
     min-width: 9.6rem;
+    background-color: #fff;
     /* background-color: #43A047 !important; */
 }
 
@@ -1062,18 +1072,25 @@ article.tag-draft > section.post-content:before
     color: #fff;
 }
 
+.admonitionblock.tip > table {
+    background-color: #3B8E3F; /* -5% (minus) lightning than td.coontent */
+}
+.admonitionblock > table > tbody > tr > td.icon {
+    min-width: 9.6rem;
+    background-color: #5BBA5F !important; /* +5% (plus) lightning than td.content */
+
+}
 .admonitionblock.tip > table > tbody > tr > td > i:before {
     content: '\f1bb';
 }
-
 .admonitionblock.tip > table > tbody > tr > td.content {
     background-color: #43A047 !important;
     color: #fff;
 }
+
 .admonitionblock.important > table > tbody > tr > td > i:before {
     content: '\f19c';
 }
-
 .admonitionblock.important > table > tbody > tr > td.content {
     background-color: #FF5722 !important;
     color: #fff;
