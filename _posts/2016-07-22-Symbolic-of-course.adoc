@@ -1,0 +1,4 @@
+= Symbolic of course
+:hp-tags: my freaking tag 1, okay buddy, hello
+
+This is test
