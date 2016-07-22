@@ -1061,6 +1061,7 @@ article.tag-draft > section.post-content:before
     width: 100%;
     background-color: #fff !important;
     color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
 }
 
 /* SPECIFIC ADMONITION*/
