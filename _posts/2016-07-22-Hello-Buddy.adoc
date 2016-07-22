@@ -27,6 +27,12 @@ TIP: If you want the output to look familiar, copy (or link) the AsciiDoc styles
 
 NOTE: Items marked with TODO are either not yet supported or a work in progress.
 
+IMPORTANT: this is very important.
+
+CAUTION: caution!!!!
+
+WARNING: hello buddy.
+
 [[first,First Steps]]
 == First Steps with http://asciidoc.org[AsciiDoc]
 
