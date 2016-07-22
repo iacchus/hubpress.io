@@ -1128,7 +1128,7 @@ article.tag-draft > section.post-content:before
 }
 
 .admonitionblock.warning > table {
-    background-color: #3B8E3F; /* -5% (minus) lightning than td.coontent */
+    background-color: #B71B1B; /* -5% (minus) lightning than td.coontent */
 }
 .admonitionblock.warning > table > tbody > tr > td.icon {
     min-width: 9.6rem;
@@ -1138,7 +1138,7 @@ article.tag-draft > section.post-content:before
     content: '\f24a';
 }
 .admonitionblock.warning > table > tbody > tr > td.content {
-    background-color: #B71B1B !important;
+    background-color: #B71C1C !important;
     color: #fff;
 }
 
