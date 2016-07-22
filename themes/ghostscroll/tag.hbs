@@ -1,17 +1,35 @@
 {{!< default}}
-<header id="header" class="animated fadeIn"{{#if tag.image}} style="background-image: url({{tag.image}})"{{/if}}>
-    <div class="header-background">
-    <section class="blog-content">
-        <a id="site-url" class="blog-title" href="{{@blog.url}}">{{@blog.title}}</a>
-        <span class="blog-description">{{@blog.description}}</span>
-        {{> links}}
-    </section>
-    <section class="header-content">
-        <h1 class="tag-title animated fadeInUp">{{tag.name}}</h1>
-        <span class="tag-data"><span class="tag-description animated fadeInUp">{{tag.description}}</span></span>
-    </section>
-    </div>
+
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+{{! The big featured header on the homepage, with the site logo and description }}
+<header id="site-head" {{#tag}}{{#if image}}style="background-image: url({{image}})"{{/if}}">{{/tag}}
+    <div class="vertical">
+        <div id="site-head-content" class="inner">
+        <a id="blog-logo" href="{{@blog.url}}">
+                {{#if @blog.logo}}
+                    <img src="{{@blog.logo}}" alt="Back to home" />
+                {{else}}
+                    {{@blog.title}}
+                {{/if}}
+            </a>
+            <h1 class="blog-title">{{tag.name}}</h1>         
+            <h2 class="blog-description">found {{plural pagination.total empty='No posts' singular='% post' plural='% posts'}} tagged "{{tag.name}}"</h2>
+         
+         <h4 id="search"></h4>
+        <i class="fa fa-search"><input class="blog-description" id="search-field" placeholder=" looking for something?"/></i>
+        <span class="blog-description" id="results"></span>
+        
+            </div>
+                </div>
+                <a id=header-arrow class="fa fa-angle-left"><span class="hidden">Scroll Down</span></a>
 </header>
-<main id="main" class="archive">
-    {{> loop}}
+
+<main id="content" class="content" role="main">
+
+    {{! The tag below includes the post loop - partials/pagination.hbs }}
+    {{> "pagination"}}
+
+    {{! The tag below includes the post loop - partials/loop.hbs }}
+    {{> "loop"}}
+
 </main>
