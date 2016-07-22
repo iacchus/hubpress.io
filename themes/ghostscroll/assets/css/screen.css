@@ -1075,7 +1075,7 @@ article.tag-draft > section.post-content:before
 .admonitionblock.tip > table {
     background-color: #3B8E3F; /* -5% (minus) lightning than td.coontent */
 }
-.admonitionblock > table > tbody > tr > td.icon {
+.admonitionblock.tip > table > tbody > tr > td.icon {
     min-width: 9.6rem;
     background-color: #5BBA5F !important; /* +5% (plus) lightning than td.content */
 
