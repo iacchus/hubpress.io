@@ -1030,25 +1030,32 @@ article.tag-draft > section.post-content:before
 }
 
 
-//.admonistionblock > table > tbody > tr > td.icon
+//.admonitionblock > table > tbody > tr > td.icon
 
-.admonistionblock > table > tbody > tr > td.icon {
+/* GENERAL ADMONITION */
+.admonitionblock > table > tbody > tr > td.icon {
     min-width: 8.2rem;
     /* background-color: #43A047 !important; */
 }
 
-.admonistionblock > table > tbody > tr > td.content {
-    background-color: #43A047 !important;
-    color: #fff;
-}
-
-.admonistionblock > table > tbody > tr > td > i.icon-tip:before {
+.admonitionblock > table > tbody > tr > td > i {
     font-family: 'FontAwesome';
     color: #333;
     width: 100%;
     height: 100%;
+}
+
+/* SPECIFIC ADMONITION*/
+
+.admonitionblock.tip > table > tbody > tr > td > i:before {
     content: '\f1bb';
 }
+
+.admonitionblock.tip > table > tbody > tr > td.content {
+    background-color: #43A047 !important;
+    color: #fff;
+}
+
 
 /* ==========================================================================
    6. Third Party Elements - Embeds from other services
