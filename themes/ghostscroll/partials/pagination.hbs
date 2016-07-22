@@ -1,18 +1,6 @@
-    <div class='fixed-nav'>
-      <a class="social" href="/about-this-blog" title="About this Blog"><span class="fa-stack fa-lg">
-	<i class="fa fa-square-o fa-stack-2x"></i>
-	<i class="fa fa-question fa-stack-1x"></i>
-      </span></a>
-      <a id="totop-arrow" title="Back to top"><span class="fa-stack fa-lg">
-	<i class="fa fa-square-o fa-stack-2x"></i>
-	<i class="fa fa-angle-up fa-stack-1x"></i>
-      </span></a>
-        {{#if pagination.prev}}<a class="prev" href="/page/{{pagination.prev}}" title="Newer posts"><span class="fa-stack fa-lg">
-        <i class="fa fa-square-o fa-stack-2x"></i>
-	<i class="fa fa-angle-left fa-stack-1x"></i>
-      </span></a>{{/if}}
-	{{#if pagination.next}}<a class="next" href="/page/{{pagination.next}}" title="Older posts"><span class="fa-stack fa-lg">
-	<i class="fa fa-square-o fa-stack-2x"></i>
-	<i class="fa fa-angle-right fa-stack-1x"></i>
-      </span></a>{{/if}}
-    </div>
+<nav class="pagination" role="navigation">
+
+  {{#if pagination.prev}}<div class="pagination-left"><a class="prev" href="/page/{{pagination.prev}}">&larr; Newer Posts</a></div>{{/if}}
+  {{#if pagination.next}}<div class="pagination-right"><a class="next" href="/page/{{pagination.next}}">Older Posts &rarr;</a></div>{{/if}}
+
+</nav>
