@@ -1039,6 +1039,7 @@ article.tag-draft > section.post-content:before
 
 .admonitionblock > table > tbody > tr > td {
     border: 0;
+    padding: 2.8rem 0.8rem;
 }
 
 .admonitionblock > table > tbody > tr > td.icon {
