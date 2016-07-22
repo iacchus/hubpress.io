@@ -1079,6 +1079,10 @@ article.tag-draft > section.post-content:before
 
 }
 .admonitionblock.tip > table > tbody > tr > td > i:before {
+    font-size: 3.0rem;
+    color: rgba(255,255,255,0.6);
+    text-shadow: 0px 0px #5BBA5F, 1px 1px #333;
+
     content: '\f1bb';
 }
 .admonitionblock.tip > table > tbody > tr > td.content {
