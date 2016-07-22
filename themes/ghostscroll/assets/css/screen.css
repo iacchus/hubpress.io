@@ -1035,7 +1035,7 @@ article.tag-draft > section.post-content:before
 /* GENERAL ADMONITION (classes that apply to all of them) */
 
 .admonitionblock > table > tbody > tr > td.icon {
-    min-width: 8.2rem;
+    min-width: 9.6rem;
     /* background-color: #43A047 !important; */
 }
 
@@ -1047,6 +1047,7 @@ article.tag-draft > section.post-content:before
 }
 
 .admonitionblock > table > tbody > tr > td.content {
+    width: 100%;
     background-color: #fff !important;
     color: #fff;
 }
