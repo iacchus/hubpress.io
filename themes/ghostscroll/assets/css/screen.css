@@ -1008,7 +1008,7 @@ article.tag-draft > section.post-content:before
 }
 
 .author-meta a {
-    color: #3A4145;
+    color: #333;
 }
 .author-meta a:hover {
     color: #111;
@@ -1743,7 +1743,13 @@ width: 40%;
  }*/
 .author-meta span {
     display: inline-block;
-    margin: 0 2rem 1rem 0;
+    //margin: 0 2rem 1rem 0;
+
+    padding: 0.7rem;
+    margin-right: 0.7rem;
+
+    background-color: rgba(255,255,255,0.4);
+
     word-wrap: break-word;
 }
 .author-meta a {
