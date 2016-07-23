@@ -502,7 +502,7 @@ li.footnote > p {
     margin: 0;
     text-align: center;
     color: #fff;
-    background: rgb(52,52,102) no-repeat center center;
+    background: #86c440 no-repeat center center;
     background-size: cover;
 //    background-attachment: fixed;
 }
