@@ -1108,6 +1108,8 @@ article.tag-draft > section.post-content:before
     font-family: 'Inconsolata', monospace;
     font-size: 1.4rem;
     letter-spacing: -0.1rem;
+
+    font-weight: bold;
  	
     color: rgba(255,255,255,0.6);
 
