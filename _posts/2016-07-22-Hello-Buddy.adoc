@@ -50,6 +50,8 @@ ifdef::basebackend-docbook[]
 * to pass through +++<constant>XML</constant>+++ directly, surround the text with triple plus
 endif::basebackend-docbook[]
 
+`Hello Buddy`
+
 // separate two adjacent lists using a line comment (only the leading // is required)
 
 - characters can be escaped using a {backslash}
