@@ -15,9 +15,9 @@
             <h1 class="blog-title">{{tag.name}}</h1>         
             <h2 class="blog-description">found {{plural pagination.total empty='No posts' singular='% post' plural='% posts'}} tagged "{{tag.name}}"</h2>
          
-         <h4 id="search"></h4>
+         <!--<h4 id="search"></h4>
         <i class="fa fa-search"><input class="blog-description" id="search-field" placeholder=" looking for something?"/></i>
-        <span class="blog-description" id="results"></span>
+	<span class="blog-description" id="results"></span>-->
         
             </div>
                 </div>
@@ -25,6 +25,16 @@
 </header>
 
 <main id="content" class="content" role="main">
+    <div class='fixed-nav'>
+      <a class="social" href="{{@blog.url}}" alt="Back Home"><span class="fa-stack fa-lg">
+	<i class="fa fa-square-o fa-stack-2x"></i>
+	<i class="fa fa-home fa-stack-1x"></i>
+      </span></a>
+      <a id="totop-arrow"><span class="fa-stack fa-lg">
+	<i class="fa fa-square-o fa-stack-2x"></i>
+	<i class="fa fa-angle-up fa-stack-1x"></i>
+      </span></a>
+    </div>
 
     {{! The tag below includes the post loop - partials/pagination.hbs }}
     {{> "pagination"}}
