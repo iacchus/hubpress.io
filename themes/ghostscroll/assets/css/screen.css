@@ -316,22 +316,31 @@ mark {
     background-color: #ffc336;
 }
 
-code, tt {
+/*code, tt {
     padding: 0.1rem 0.2rem;
     font-family: 'Inconsolata', monospace;
     font-size: 1.4rem;
 
-    /*white-space: pre;*/
-   /* border: 1px solid #E3EDF3;
-    background: #F7FAFB;*/
     border-radius: 2px;
     color: rgba(0, 0, 0, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.2);
     background-color: rgba(255, 255, 255, 0.4);
     font-weight: bold;
     text-shadow: none !important;
-}
+}*/
 
+code, tt {
+    padding: 0rem 0.3rem 0.1rem;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.4rem;
+
+    border-radius: 2px;
+    color: rgba(255, 255, 255, 1);
+    /*border: 1px solid rgba(0, 0, 0, 0.9);*/
+    background-color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    text-shadow: none !important;
+}
 
 .odd code, .odd tt {
 }
