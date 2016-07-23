@@ -252,7 +252,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #3A4145;
+    border-top: 1px solid #666;
     margin: 2.7em 0;
     padding: 0;
 }
@@ -1012,6 +1012,22 @@ article.tag-draft > section.post-content:before
 }
 .author-meta a:hover {
     color: #111;
+}
+
+.author-meta > div {
+    display: inline-block;
+    background-color: #336;
+    border-radius: 0.3rem;
+    border:1px solid #fff;
+    color: #fff;
+    padding: 0.7rem 0.7rem 0 0.7rem;
+}
+
+.author-meta > div a {
+    color: #fff;
+}
+.author-meta > div a:hover {
+    color: #eee;
 }
 
 /* Create some space to the right for the share links */
