@@ -1585,7 +1585,6 @@ width: 40%;
 
     .author-meta span {
         display: block;
-        margin: 1.5rem 0;
     }
     .author-profile .author-meta span {
         font-size: 1.6rem;
@@ -1981,10 +1980,6 @@ width: 40%;
 
     .author-profile .author-meta span {
         font-size: 1.4rem;
-    }
-
-    .admonitionblock > table > tbody > tr > td.icon {
-	width: 1.8rem;
     }
 }
   
