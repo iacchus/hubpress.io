@@ -1,6 +1,5 @@
 = Love is on the air
-:description: hello buddy
-:hp-tags: Buddy
+:hp-tags: Buddy, draft
 
 Hello
 	
