@@ -1047,6 +1047,13 @@ article.tag-draft > section.post-content:before
     color: #50585D;
 }
 
+/* asciidoc title */
+
+.title {
+    font-size: 2.0rem;
+    letter-spacing: -0.1rem;
+    font-weight: 700;
+}
 
 /* GENERAL ADMONITION (classes that apply to all of them) */
 
