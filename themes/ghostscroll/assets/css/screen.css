@@ -1004,7 +1004,7 @@ article.tag-draft > section.post-content:before
     /*font-style: italic;*/
     font-family: 'Open Sans Condensed', sans-serif !important;
     color: #333;
-    font-weight: 600;
+    font-weight: normal;
 }
 
 .author-meta a {
