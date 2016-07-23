@@ -328,7 +328,7 @@ code, tt {
     border: 1px solid rgba(0,0,0,0.4);
     background-color: rgba(255, 255, 255, 0.4);
     font-weight: bold;
-    text-shadow: none !important;
+    text-shadow: 0 !important;
 }
 
 
@@ -1039,6 +1039,8 @@ article.tag-draft > section.post-content:before
     border-spacing: 1px;
     border-radius: 2px;
     box-shadow: 1px 1px 1px #333;
+
+    font-size: 1.6rem;
 }
 
 .admonitionblock > table > tbody > tr > td {
@@ -1064,7 +1066,7 @@ article.tag-draft > section.post-content:before
     width: 100%;
     background-color: #fff !important;
     color: #fff;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+    text-shadow: 1px 1px rgba(0,0,0,0.8);
 }
 
 /* SPECIFIC ADMONITION*/
