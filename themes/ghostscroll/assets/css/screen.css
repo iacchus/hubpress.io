@@ -1003,7 +1003,7 @@ article.tag-draft > section.post-content:before
     line-height: 1;
     /*font-style: italic;*/
     font-family: 'Open Sans Condensed', sans-serif !important;
-    color: #3A4145;
+    color: #333;
     font-weight: 600;
 }
 
