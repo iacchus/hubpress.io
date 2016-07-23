@@ -646,7 +646,7 @@ span .blog-description #results a {
     max-width: 700px;
     margin: 0rem auto;
     padding-bottom: 4rem;
-    padding-top: 4rem;
+    padding-top: 2.6rem;
     height: 70%;
     word-break: break-word;
     hyphens: auto;
@@ -756,7 +756,7 @@ a.fn-item.active {
 }
 
 .post-title {
-    margin: 0, 0, 1.0rem;
+    margin: 0 0 1.0rem;
 }
 
 .post-title a {
