@@ -953,24 +953,12 @@ article.tag-draft > section.post-content:before
 	box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 	content: "This article is a draft and is currently being worked on";
 
-	-webkit-animation: rascunho 2s ease infinite; -moz-animation: rascunho 2s ease; animation: rascunho 2s ease infinite;
+	-webkit-animation: draaft 2s ease infinite; -moz-animation: draaft 2s ease; animation: draaft 2s ease infinite;
 }
 
-/*
-.odd article.tag-draft > section.post-content:before
-{
-	border: 1px solid rgba(0,0,0,0.02);
-	background-color: rgba(255,255,255,0.8);
-
-	-webkit-animation: rascunho-odd 2s ease infinite; -moz-animation: rascunho-odd 2s ease; animation: rascunho-odd 2s ease infinite;
-}*/
-
-@-webkit-keyframes rascunho { 0% { color: #fff; } 50% { color: transparent; text-shadow: none; } 100% { color: #fff; }  }
-@-webkit-keyframes rascunho-odd { 0% { color: #333; } 50% { color: transparent; text-shadow: none; } 100% { color: #333; }  }
-@-moz-keyframes rascunho { 0% { color: #fff; } 50% { color: transparent; text-shadow: none; } 100% { color: #fff; }  }
-@-moz-keyframes rascunho-odd { 0% { color: #333; } 50% { color: transparent; text-shadow: none; } 100% { color: #333; }  }
-@keyframes rascunho { 0% { color: #fff; } 50% { color: transparent; text-shadow: none; } 100% { color: #fff; }  }
-@keyframes rascunho-odd { 0% { color: #333; } 50% { color: transparent; text-shadow: none; } 100% { color: #333; }  }
+@-webkit-keyframes draaft { 0% { color: #fff; } 50% { color: transparent; text-shadow: none; } 100% { color: #fff; }  }
+@-moz-keyframes draaft { 0% { color: #fff; } 50% { color: transparent; text-shadow: none; } 100% { color: #fff; }  }
+@keyframes draaft { 0% { color: #fff; } 50% { color: transparent; text-shadow: none; } 100% { color: #fff; }  }
 
 /* Keep large images within the bounds of the post-width */
 .post-content img {
@@ -1023,12 +1011,15 @@ article.tag-draft > section.post-content:before
     margin-right: 180px;
 }
 
-.post-footer h4 a {
+.post-footer h2 {
+}
+
+.post-footer h2 a {
     color: #2e2e2e;
     text-decoration: none;
 }
 
-.post-footer h4 a:hover {
+.post-footer h2 a:hover {
     text-decoration: underline;
 }
 
