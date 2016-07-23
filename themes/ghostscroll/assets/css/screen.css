@@ -1048,7 +1048,7 @@ article.tag-draft > section.post-content:before
 }
 
 .admonitionblock > table > tbody > tr > td.icon {
-    min-width: 9.6rem;
+    min-width: 8.6rem;
     background-color: #fff;
     text-align: center;
     padding-top: 1.6rem;
