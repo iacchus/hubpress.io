@@ -1094,6 +1094,15 @@ article.tag-draft > section.post-content:before
 
 .admonitionblock > table > tbody > tr > td > i:after {
     display: block;
+    
+    padding-top: 1.2rem;
+
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.4rem;
+    letter-spacing: -0.1rem;
+ 	
+    color: rgba(255,255,255,0.6);
+
 }
 
 .admonitionblock > table > tbody > tr > td.content {
@@ -1119,6 +1128,7 @@ article.tag-draft > section.post-content:before
     content: '\f1fc';
 }
 .admonitionblock.note > table > tbody > tr > td > i:after {
+    text-shadow: 0px 0px #7280CE, 1px 1px #333;
     content: 'note';
 }
 .admonitionblock.note > table > tbody > tr > td.content {
@@ -1141,7 +1151,8 @@ article.tag-draft > section.post-content:before
     content: '\f1bb';
 }
 .admonitionblock.tip > table > tbody > tr > td > i:after {
-	content: 'tip';
+    text-shadow: 0px 0px #5BBA5F, 1px 1px #333;
+    content: 'tip';
 }
 .admonitionblock.tip > table > tbody > tr > td.content {
     background-color: #43A047 !important;
@@ -1162,7 +1173,8 @@ article.tag-draft > section.post-content:before
     content: '\f19c';
 }
 .admonitionblock.important > table > tbody > tr > td > i:after {
-	content: 'important';
+    text-shadow: 0px 0px #3A3A3A, 1px 1px #333;
+    content: 'important';
 }
 .admonitionblock.important > table > tbody > tr > td.content {
     background-color: #212121 !important;
@@ -1183,7 +1195,8 @@ article.tag-draft > section.post-content:before
     content: '\f186';
 }
 .admonitionblock.caution > table > tbody > tr > td > i:after {
-	content: 'caution';
+    text-shadow: 0px 0px #FF916E, 1px 1px #333;
+    content: 'caution';
 }
 .admonitionblock.caution > table > tbody > tr > td.content {
     background-color: #FF5722 !important;
@@ -1204,7 +1217,8 @@ article.tag-draft > section.post-content:before
     content: '\f071';
 }
 .admonitionblock.warning > table > tbody > tr > td > i:after {
-	content: 'warning';
+    text-shadow: 0px 0px #E13E3E, 1px 1px #333;
+    content: 'warning';
 }
 .admonitionblock.warning > table > tbody > tr > td.content {
     background-color: #B71C1C !important;
