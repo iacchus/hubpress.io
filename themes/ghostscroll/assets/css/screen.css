@@ -926,7 +926,7 @@ article.tag-draft > section.post-content:before
 	color: rgba(255,255,255,0.9);
 	background-color: rgba(153,51,51,0.9);
 	box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-	content: "Este artigo é um rascunho e está atualmente em edição";
+	content: "This article is a draft and is currently being worked on";
 
 	-webkit-animation: rascunho 2s ease infinite; -moz-animation: rascunho 2s ease; animation: rascunho 2s ease infinite;
 }
