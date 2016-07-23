@@ -131,6 +131,7 @@ h3, h4, h5, h6 {
     text-rendering: optimizeLegibility;
     line-height: 120%;
     margin-top: 0;
+    margin-bottom: 1.0rem;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
