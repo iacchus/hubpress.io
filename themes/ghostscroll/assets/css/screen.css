@@ -317,7 +317,7 @@ mark {
 }
 
 code, tt {
-    padding: 0.3rem;
+    padding: 0.1rem 0.2rem;
     font-family: 'Inconsolata', monospace;
     font-size: 1.4rem;
 
@@ -1053,6 +1053,7 @@ article.tag-draft > section.post-content:before
     font-size: 2.0rem;
     letter-spacing: -0.1rem;
     font-weight: 700;
+    /*try this later with "font size 1.6rem" and "text-transform == uppercase" */
 }
 
 /* GENERAL ADMONITION (classes that apply to all of them) */
