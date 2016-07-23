@@ -524,6 +524,10 @@ li.footnote > p {
 //    background-attachment: fixed;
 }
 
+#post-head a {
+    text-decoration: none;
+}
+
 #site-head:after {
 
 }
@@ -594,6 +598,16 @@ li.footnote > p {
     color: rgba(0,0,0,0.85);
     text-shadow: 1px 1px 6px rgba(255,255,255,0.4);
 }
+
+.post-title {
+    margin: 1rem 0 2rem 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 5rem;
+    letter-spacing: -0.2rem;
+    color: rgba(0,0,0,0.85);
+    text-shadow: 1px 1px 6px rgba(255,255,255,0.4);
+}
+
 
 .blog-description {
     margin: 0;
