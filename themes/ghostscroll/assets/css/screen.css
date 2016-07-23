@@ -976,8 +976,16 @@ article.tag-draft > section.post-content:before
 }
 
 .post-footer h2 {
-    font-size: 1.8rem;
-    margin: 0;
+    text-size: 2.0rem;
+}
+
+.post-footer h2 a {
+    color: #2e2e2e;
+    text-decoration: none;
+}
+
+.post-footer h2 a:hover {
+    text-decoration: underline;
 }
 
 .post-footer p {
@@ -1011,17 +1019,6 @@ article.tag-draft > section.post-content:before
     margin-right: 180px;
 }
 
-.post-footer h2 {
-}
-
-.post-footer h2 a {
-    color: #2e2e2e;
-    text-decoration: none;
-}
-
-.post-footer h2 a:hover {
-    text-decoration: underline;
-}
 
 /* Drop the share links in the space to the right.
    Doing it like this means it's easier for the author bio
