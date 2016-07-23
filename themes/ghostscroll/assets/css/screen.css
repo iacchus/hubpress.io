@@ -756,7 +756,7 @@ a.fn-item.active {
 }
 
 .post-title {
-    margin: 0, 1.0rem;
+    margin: 0, 0, 1.0rem;
 }
 
 .post-title a {
