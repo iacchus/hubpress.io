@@ -324,10 +324,11 @@ code, tt {
    /* border: 1px solid #E3EDF3;
     background: #F7FAFB;*/
     border-radius: 2px;
-    color: #3A4145;
-    border: 1px solid #ccc;
-    background-color: #eee;
+    color: #333333;
+    border: 1px solid rgba(0,0,0,0.4);
+    background-color: rgba(255, 255, 255, 0.4);
     font-weight: bold;
+    text-shadow: none !important;
 }
 
 
