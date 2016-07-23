@@ -1020,7 +1020,7 @@ article.tag-draft > section.post-content:before
     border-radius: 0.3rem;
     border:1px solid #fff;
     color: #fff;
-    padding: 0.7rem 0.7rem 0 0.7rem;
+    padding: 0 0.7rem 0 0;
 }
 
 .author-meta > div a {
