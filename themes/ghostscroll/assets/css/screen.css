@@ -317,18 +317,19 @@ mark {
 }
 
 code, tt {
-    padding: 2px 4px;
-    font-family: 'Inconsolata', monospace, sans-serif;
-    font-size: 1.7rem;
+    padding: 0.3rem;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.4rem;
+
     /*white-space: pre;*/
    /* border: 1px solid #E3EDF3;
     background: #F7FAFB;*/
     border-radius: 2px;
-    color: #333333;
-    border: 1px solid rgba(0,0,0,0.4);
+    color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     background-color: rgba(255, 255, 255, 0.4);
     font-weight: bold;
-    text-shadow: 0 !important;
+    text-shadow: none !important;
 }
 
 
