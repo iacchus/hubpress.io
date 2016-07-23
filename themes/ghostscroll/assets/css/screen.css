@@ -1181,7 +1181,7 @@ article.tag-draft > section.post-content:before
     content: '\f186';
 }
 .admonitionblock.caution > table > tbody > tr > td.content {
-    background-color: #1FF572 !important;
+    background-color: #FF5722 !important;
     color: #fff;
 }
 
