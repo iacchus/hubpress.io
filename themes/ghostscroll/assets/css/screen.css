@@ -537,6 +537,42 @@ li.footnote > p {
 #post-head a {
     text-decoration: none;
 }
+#tag-head {
+    position: relative;
+    display: table;
+    width: 100%;
+    //height: 100%;
+    margin: 0;
+    padding: 1.4rem;
+    text-align: center;
+    color: #555;
+    background: #f8f8f8 no-repeat center center;
+    border-bottom: 1px solid #e0e0e0;
+    background-size: cover;
+//    background-attachment: fixed;
+}
+
+#tag-head a {
+    text-decoration: none;
+}
+#author-head {
+    position: relative;
+    display: table;
+    width: 100%;
+    //height: 100%;
+    margin: 0;
+    padding: 1.4rem;
+    text-align: center;
+    color: #555;
+    background: #f8f8f8 no-repeat center center;
+    border-bottom: 1px solid #e0e0e0;
+    background-size: cover;
+//    background-attachment: fixed;
+}
+
+#author-head a {
+    text-decoration: none;
+}
 
 #site-head:after {
 
