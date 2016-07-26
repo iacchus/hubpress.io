@@ -1,5 +1,0 @@
-= okay
-
-This is another test .. ok
-
-okay.
