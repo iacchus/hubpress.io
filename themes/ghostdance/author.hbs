@@ -1,0 +1,55 @@
+{{!< default}}
+
+{{! Everything inside the #author tags pulls data from the author }}
+{{#author}}
+    <header id="author-head" {{#if cover}}style="background-image: url({{cover}})"{{/if}}>
+        <div class="vertical">
+        <div id="site-head-content" class="inner">
+    <a id="blog-logo" href="{{@blog.url}}">
+                 {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{else}}
+                    {{@blog.title}}{{/if}}
+            </a>
+	<div class="presents" style:"display: inline-block;"><em>you are browsing posts from the author</em></div>
+        <h1 class="blog-title">
+            {{#if image}}
+            <figure class="author-page-image" itemprop="image">
+                <a class="img" href="{{url}}" style="background-image: url({{author.image}})" ><span class="hidden">{{name}}'s Picture</span></a>
+            </figure>
+            {{/if}}
+		 {{name}}.</h1>
+
+        {{> "links"}}
+        <h2 class="blog-description">{{bio}}</h2>
+	<!--<a class='btn first'>See the Posts</a>-->
+        <span class="author-stats"><i class="fa fa-archive"></i> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
+            
+        <!-- <h4 id="search"></h4>
+        <i class="fa fa-search"><input class="blog-description" id="search-field" placeholder=" looking for something?"/></i>
+	<span class="blog-description" id="results"></span>-->
+        
+            </div>
+                </div>
+                <a id=header-arrow class="fa fa-angle-left"><span class="hidden">Scroll Down</span></a>
+</header>
+
+{{/author}}
+
+{{! The main content area on the homepage }}
+<main id="content" class="content" role="main">
+    <div class='fixed-nav'>
+      <a class="social" href="{{@blog.url}}" alt="Back Home"><span class="fa-stack fa-lg">
+	<i class="fa fa-square-o fa-stack-2x"></i>
+	<i class="fa fa-home fa-stack-1x"></i>
+      </span></a>
+      <a id="totop-arrow"><span class="fa-stack fa-lg">
+	<i class="fa fa-square-o fa-stack-2x"></i>
+	<i class="fa fa-angle-up fa-stack-1x"></i>
+      </span></a>
+      {{! The tag below includes the post loop - partials/pagination.hbs }}
+      {{> "pagination"}}
+    </div>
+
+    {{! The tag below includes the post loop - partials/loop.hbs }}
+    {{> "loop"}}
+
+</main>
