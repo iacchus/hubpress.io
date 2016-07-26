@@ -1335,6 +1335,7 @@ article.tag-draft > section.post-content:before
     font-size: 1.3rem;
     color: #9EABB3;
     text-align: center;
+    text-shadow: 1px 1px #fff;
 }
 
 .pagination a {
