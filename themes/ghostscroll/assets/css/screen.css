@@ -1076,11 +1076,12 @@ article.tag-draft > section.post-content:before
 
 .author-meta > div {
     display: inline-block;
-    background-color: #336;
+    background-color: #fff;
     border-radius: 0.3rem;
     border:1px solid #fff;
-    color: #fff;
+    color: #333;
     padding: 0 0.7rem 0 0;
+    box-shadow: 1px 1px 1px #333;
 }
 
 .author-meta > div a {
