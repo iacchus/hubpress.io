@@ -6,7 +6,8 @@
     "page": "page.hbs",
     "post": "post.hbs",
     "tag": "tag.hbs",
-    "loop": "partials/loop.hbs"
+    "loop": "partials/loop.hbs",
+    "links": "partials/links.hbs"
   },
   "version":"1.0.0"
 }

@@ -18,6 +18,7 @@
             {{/if}}
 		 {{name}}.</h1>
 
+        {{> "links"}}
         <h2 class="blog-description">{{bio}}</h2>
 	<!--<a class='btn first'>See the Posts</a>-->
         <span class="author-stats"><i class="fa fa-archive"></i> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
