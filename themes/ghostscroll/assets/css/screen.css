@@ -789,8 +789,10 @@ a[title]:hover:after
 .fixed-nav {
     max-width: 280px;
     width: 280px;
+    height: 100%;
     position: fixed;
-    top: 40px;
+    top: 0px;
+    padding-top: 40px;
     left: 2%;
     z-index: 99999;
     font-family: 'Open Sans Condensed', sans-serif;
