@@ -45,10 +45,9 @@
 	<i class="fa fa-square-o fa-stack-2x"></i>
 	<i class="fa fa-angle-up fa-stack-1x"></i>
       </span></a>
+      {{! The tag below includes the post loop - partials/pagination.hbs }}
+      {{> "pagination"}}
     </div>
-
-    {{! The tag below includes the post loop - partials/pagination.hbs }}
-    {{> "pagination"}}
 
     {{! The tag below includes the post loop - partials/loop.hbs }}
     {{> "loop"}}
