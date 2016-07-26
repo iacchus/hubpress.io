@@ -11,9 +11,9 @@
             </a>
 	<div class="presents" style:"display: inline-block;"><em>you are browsing posts from the author</em></div>
         <h1 class="blog-title">
-            {{#if image}}
+            {{#if author.image}}
             <figure class="author-page-image" itemprop="image">
-                <a class="img" href="{{url}}" style="background-image: url({{image}})" ><span class="hidden">{{name}}'s Picture</span></a>
+                <a class="img" href="{{url}}" style="background-image: url({{author.image}})" ><span class="hidden">{{name}}'s Picture</span></a>
             </figure>
             {{/if}}
 		 {{name}}</h1>
