@@ -11,7 +11,13 @@
             </a>
 	<div class="presents" style:"display: inline-block;"><em>you are browsing posts from the author</em></div>
         <h1 class="blog-title"><i class="fa fa-user"></i> {{name}}</h1>
+            {{#if image}}
+            <figure class="author-image" itemprop="image">
+                <a class="img" href="{{url}}" style="background-image: url({{image}})" ><span class="hidden">{{name}}'s Picture</span></a>
+            </figure>
+            {{/if}}
         <h2 class="blog-description">{{bio}}</h2>
+    <a class='btn first'>See the Posts</a>
         <span class="author-stats"><i class="fa fa-archive"></i> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
             
         <!-- <h4 id="search"></h4>
