@@ -1,7 +1,0 @@
-= Testing tdxt
-
-test ok
-
-ok
-
-okok
