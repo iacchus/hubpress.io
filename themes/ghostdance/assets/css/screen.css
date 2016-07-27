@@ -1069,6 +1069,7 @@ article.tag-draft > section.post-content:before
 
 .author-meta a {
     color: #333;
+    text-decoration: none;
 }
 .author-meta a:hover {
     color: #111;
@@ -1084,12 +1085,12 @@ article.tag-draft > section.post-content:before
     box-shadow: 1px 1px 6px rgba(0,0,0,0.4);
 }
 
-.author-meta > div a {
+/*.author-meta > div a {
     color: #333;
-}
-.author-meta > div a:hover {
+}*
+/*.author-meta > div a:hover {
     color: #eee;
-}
+}*
 
 /* Create some space to the right for the share links */
 .post-footer .author {
