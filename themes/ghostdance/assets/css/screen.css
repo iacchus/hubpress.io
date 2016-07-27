@@ -1059,12 +1059,12 @@ article.tag-draft > section.post-content:before
     padding: 0;
     margin: 0;
     list-style: none;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 1;
     /*font-style: italic;*/
-    font-family: 'Open Sans Condensed', sans-serif !important;
+    font-family: 'Oswald', 'Open Sans Condensed', sans-serif !important;
     color: #333;
-    font-weight: normal;
+    font-weight: 400;
 }
 
 .author-meta a {
@@ -1077,11 +1077,11 @@ article.tag-draft > section.post-content:before
 .author-meta > div {
     display: inline-block;
     background-color: #fff;
-    border-radius: 0.3rem;
+    border-radius: 0.2rem;
     border:1px solid #fff;
     color: #333;
     padding: 0 0.7rem 0 0;
-    box-shadow: 1px 1px 1px #333;
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.4);
 }
 
 .author-meta > div a {
@@ -1814,14 +1814,14 @@ width: 40%;
 
     color: #fff;
 
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
+    border-top-left-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem;
 
     word-wrap: break-word;
 }
-.author-meta a {
+/*.author-meta a {
     text-decoration: none;
-}
+}*/
 
 /* Turn off meta for page2+ to make room for extra
    pagination prev/next links */
@@ -1967,7 +1967,7 @@ width: 40%;
     }
 
     blockquote p {
-        border-left: 3px solid #3A4145;
+        border-left: 3px solid #333;
         padding: 1.1rem 0 0.8rem 1.2rem;
         line-height: 3.5rem;
     }
