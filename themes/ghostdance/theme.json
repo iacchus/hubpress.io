@@ -7,7 +7,7 @@
     "post": "post.hbs",
     "tag": "tag.hbs",
     "links": "partials/links.hbs",
-    "links-post": "partials/links-post.hbs",
+    "linkspost": "partials/linkspost.hbs",
     "loop": "partials/loop.hbs",
     "pagination": "partials/pagination.hbs"
   },
