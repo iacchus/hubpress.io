@@ -1,0 +1,5 @@
+= Testing embed ipython notebook as html
+
+++++
+<iframe src="https://rawgit.com/iacchus/iacchus.github.io/ipynb-html/Untitled3.html"></iframe>
+++++
