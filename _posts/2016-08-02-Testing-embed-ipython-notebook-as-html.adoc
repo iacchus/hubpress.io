@@ -10,3 +10,38 @@ Iframe
 <iframe class="embedme" id="lolzwat"></iframe>
 ++++
 
+== HOW did I amnaged to do it:
+
+=== 1. Post an iframe
+
+----
+++++
+<iframe class="embedme" id="lolzwat"></iframe>
+++++
+----
+
+=== 2. Load via jquery/ajax the contents of the .html via rawgit.com
+
+----
+$.get("https://rawgit.com/iacchus/iacchus.github.io/master/ipynb-html/Untitled3.html",
+    function(response)
+    {
+        $("#lolzwat").contents().find('body').append(response);
+    }
+);
+----
+
+=== 3. Set the iframe width to 100%, ( as this value we know by the parent-container)
+
+----
+#lolzwat {
+width: 100%;
+}
+----
+
+=== 4. Use JS to get the content size of the iframe, and set the iframe size to it
+
+----
+$('#lolzwat').height( $('#lolzwat').contents().height() );
+----
+
