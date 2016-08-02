@@ -6,19 +6,19 @@
     <meta name="google-site-verification" content="" />
 
     <title>Iacchus Mercurius - Page 1 - The Leet Crafting</title>
-    <link rel="shortcut icon" href="//iacchus.github.io/themes/ghostdance/assets/images/favicon.ico?v=1470178702479" />
+    <link rel="shortcut icon" href="//iacchus.github.io/themes/ghostdance/assets/images/favicon.ico?v=1470181659258" />
     <meta name="description" content="Well, what could I write about me in this short bio? Weell, anything." />
     <meta name="keywords" content="howto, come fare, web, backup, BitSync, OSMC, KODI, raspberry pi, cryptocurrency, KANO, linux" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="//iacchus.github.io/themes/ghostdance/assets/css/screen.css?v=1470178702479" />
+    <link rel="stylesheet" type="text/css" href="//iacchus.github.io/themes/ghostdance/assets/css/screen.css?v=1470181659258" />
 
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Old+Standard+TT:400,400italic,700|Roboto+Condensed:400,700,300,300italic, 400italic,700italic|PT+Sans+Narrow:400,700|Droid+Serif:400,700,400italic|Oswald:300,700|Inconsolata:400,700'>
 
-    <link rel="stylesheet" type="text/css" href="//iacchus.github.io/themes/ghostdance/assets/font-awesome-4.6.3/css/font-awesome.min.css?v=1470178702479" >
-    <!--<link rel="stylesheet" type="text/css" href="//iacchus.github.io/themes/ghostdance/assets/css/search.css?v=1470178702479" >-->
+    <link rel="stylesheet" type="text/css" href="//iacchus.github.io/themes/ghostdance/assets/font-awesome-4.6.3/css/font-awesome.min.css?v=1470181659258" >
+    <!--<link rel="stylesheet" type="text/css" href="//iacchus.github.io/themes/ghostdance/assets/css/search.css?v=1470181659258" >-->
 
     <link rel="canonical" href="https://iacchus.github.io/https://iacchus.github.io/author/iacchus/" />
     <meta name="referrer" content="origin" />
@@ -113,6 +113,50 @@ null
     <div class="content">
     <pre>&lt;script&gt;$(document).ready(function(){ $("#lolzwat").load("https://rawgit.com/iacchus/iacchus.github.io/master/ipynb-html/Untitled3.html");})&lt;/script&gt;</pre>
     </div>
+    </div>
+    <div class="literalblock">
+    <div class="content">
+    <pre></pre>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="sect1">
+    <h2 id="_what_can_be_done_to_implement_this_script">What can be done to implement this script</h2>
+    <div class="sectionbody">
+    <div class="paragraph">
+    <p><strong>IF WE CAN GET SITE DATA VIA CLIENT JS WE CAN DO THIS</strong></p>
+    </div>
+    <div class="olist arabic">
+    <ol class="arabic">
+    <li>
+    <p>An IFRAME with css class <code>.ipynb-embed</code> and an special attribute as the Filename "Untitled3.html".</p>
+    </li>
+    <li>
+    <p>NO. Then, jquery looks for "iframe.ipynb-embed" and get the attribute, mounts with (variables in uppercase)</p>
+    <div class="literalblock">
+    <div class="content">
+    <pre>https://rawgit.com / USERNAME / USERNAME.github.io / master / ipynb-html / FILENAME</pre>
+    </div>
+    </div>
+    </li>
+    </ol>
+    </div>
+    <div class="paragraph">
+    <p>OR RAWGIT CDN, using <code>?version=COMMITHASH</code> if we can get it by JS.</p>
+    </div>
+    <div class="olist arabic">
+    <ol class="arabic">
+    <li>
+    <p>GETs the address, fills the IFRAME, and write it to iframe <code>body</code>. NO. Then, sets iframe width and height. (if not set width and <code>display: none</code> before, in css, then Visible via the script load.)</p>
+    </li>
+    </ol>
+    </div>
+    <div class="paragraph">
+    <p><strong>IF WE CANNOT GET SITE DATA VIA CLIENT JS THEN?</strong></p>
+    </div>
+    <div class="paragraph">
+    <p>?</p>
     </div>
     <iframe class="embedme" id="lolzwat"></iframe>
     </div>
@@ -1001,14 +1045,14 @@ if (typeof jQuery == 'undefined') {
     document.write('<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></'+'script>');
   }
     </script>  -->
-    <!--<script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/icons.js?v=1470178702479"></script>-->
-    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/jquery-1.7.1.min.js?v=1470178702479"></script>
-    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/index.js?v=1470178702479"></script>
-    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/jquery.fitvids.js?v=1470178702479"></script>
-    <!--<script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/ghostHunter/jquery.ghostHunter.min.js?v=1470178702479"></script>
-    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/search.js?v=1470178702479"></script>-->
+    <!--<script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/icons.js?v=1470181659258"></script>-->
+    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/jquery-1.7.1.min.js?v=1470181659258"></script>
+    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/index.js?v=1470181659258"></script>
+    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/jquery.fitvids.js?v=1470181659258"></script>
+    <!--<script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/ghostHunter/jquery.ghostHunter.min.js?v=1470181659258"></script>
+    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/search.js?v=1470181659258"></script>-->
     <!--<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/dsq_comments_count.js?v=1470178702479"></script>-->
+    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/dsq_comments_count.js?v=1470181659258"></script>-->
     
 </body>
 </html>
