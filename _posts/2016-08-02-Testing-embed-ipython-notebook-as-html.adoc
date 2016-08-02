@@ -6,6 +6,27 @@ Iframe
 <script>$(document).ready(function(){ $("#lolzwat").load("https://rawgit.com/iacchus/iacchus.github.io/master/ipynb-html/Untitled3.html");})</script>
 ....
 
+....
+
+....
+
+== What can be done to implement this script
+
+*IF WE CAN GET SITE DATA VIA CLIENT JS WE CAN DO THIS*
+
+1. An IFRAME with css class `.ipynb-embed` and an special attribute as the Filename "Untitled3.html".
+2. NO. Then, jquery looks for "iframe.ipynb-embed" and get the attribute, mounts with (variables in uppercase)
+
+ https://rawgit.com / USERNAME / USERNAME.github.io / master / ipynb-html / FILENAME
+ 
+OR RAWGIT CDN, using `?version=COMMITHASH` if we can get it by JS.
+ 
+3. GETs the address, fills the IFRAME, and write it to iframe `body`. NO. Then, sets iframe width and height. (if not set width and `display: none` before, in css, then Visible via the script load.)  
+
+*IF WE CANNOT GET SITE DATA VIA CLIENT JS THEN?*
+
+?
+
 ++++
 <iframe class="embedme" id="lolzwat"></iframe>
 ++++
