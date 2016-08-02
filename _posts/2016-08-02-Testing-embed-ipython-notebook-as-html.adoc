@@ -4,6 +4,6 @@ Iframe
 
 ++++
 <script>$(document).ready(function(){ $("#lolzwat").load("https://rawgit.com/iacchus/iacchus.github.io/master/ipynb-html/Untitled3.html");})</script>
-<div class="embedme" id="lolzwat"></div>
+<html class="embedme" id="lolzwat"></html>
 ++++
 
