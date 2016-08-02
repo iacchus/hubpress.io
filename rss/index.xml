@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[The Leet Crafting]]></title><description><![CDATA[This is a weblog on philosophy and arts]]></description><link>https://iacchus.github.io</link><image><url>images/wallhaven-413234.jpg</url><title>The Leet Crafting</title><link>https://iacchus.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 02 Aug 2016 22:10:54 GMT</lastBuildDate><atom:link href="https://iacchus.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Testing embed ipython notebook as html]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[The Leet Crafting]]></title><description><![CDATA[This is a weblog on philosophy and arts]]></description><link>https://iacchus.github.io</link><image><url>images/wallhaven-413234.jpg</url><title>The Leet Crafting</title><link>https://iacchus.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 02 Aug 2016 22:51:46 GMT</lastBuildDate><atom:link href="https://iacchus.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Testing embed ipython notebook as html]]></title><description><![CDATA[<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
 <p>Iframe</p>
 </div>
 <div class="literalblock">
@@ -6,7 +8,55 @@
 <pre>&lt;script&gt;$(document).ready(function(){ $("#lolzwat").load("https://rawgit.com/iacchus/iacchus.github.io/master/ipynb-html/Untitled3.html");})&lt;/script&gt;</pre>
 </div>
 </div>
-<iframe class="embedme" id="lolzwat"></iframe>]]></description><link>https://iacchus.github.io/2016/08/02/Testing-embed-ipython-notebook-as-html.html</link><guid isPermaLink="true">https://iacchus.github.io/2016/08/02/Testing-embed-ipython-notebook-as-html.html</guid><dc:creator><![CDATA[Iacchus Mercurius]]></dc:creator><pubDate>Tue, 02 Aug 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Testing Jupyter Notebook Embed]]></title><description><![CDATA[<div class="paragraph">
+<iframe class="embedme" id="lolzwat"></iframe>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_how_did_i_amnaged_to_do_it">HOW did I amnaged to do it:</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_1_post_an_iframe">1. Post an iframe</h3>
+<div class="listingblock">
+<div class="content">
+<pre>++++
+&lt;iframe class="embedme" id="lolzwat"&gt;&lt;/iframe&gt;
+++++</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_2_load_via_jquery_ajax_the_contents_of_the_html_via_rawgit_com">2. Load via jquery/ajax the contents of the .html via rawgit.com</h3>
+<div class="listingblock">
+<div class="content">
+<pre>$.get("https://rawgit.com/iacchus/iacchus.github.io/master/ipynb-html/Untitled3.html",
+    function(response)
+    {
+        $("#lolzwat").contents().find('body').append(response);
+    }
+);</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_set_the_iframe_width_to_100_as_this_value_we_know_by_the_parent_container">3. Set the iframe width to 100%, ( as this value we know by the parent-container)</h3>
+<div class="listingblock">
+<div class="content">
+<pre>#lolzwat {
+width: 100%;
+}</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_4_use_js_to_get_the_content_size_of_the_iframe_and_set_the_iframe_size_to_it">4. Use JS to get the content size of the iframe, and set the iframe size to it</h3>
+<div class="listingblock">
+<div class="content">
+<pre>$('#lolzwat').height( $('#lolzwat').contents().height() );</pre>
+</div>
+</div>
+</div>
+</div>
+</div>]]></description><link>https://iacchus.github.io/2016/08/02/Testing-embed-ipython-notebook-as-html.html</link><guid isPermaLink="true">https://iacchus.github.io/2016/08/02/Testing-embed-ipython-notebook-as-html.html</guid><dc:creator><![CDATA[Iacchus Mercurius]]></dc:creator><pubDate>Tue, 02 Aug 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Testing Jupyter Notebook Embed]]></title><description><![CDATA[<div class="paragraph">
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vestibulum tempor dignissim. Nulla sodales eget ante vel vestibulum. Morbi urna tellus, fermentum quis vulputate sit amet, porttitor id lorem. Phasellus at tincidunt enim. Praesent lacinia, urna ut tincidunt aliquet, risus odio consectetur neque, ut pretium tellus lectus et lacus. Nunc auctor nibh ut dolor dapibus gravida. Sed hendrerit vehicula varius. Nam lobortis varius lobortis. Maecenas ultricies fringilla arcu, eget lacinia urna porttitor nec. Proin nunc mauris, accumsan sit amet lorem ut, consectetur ultricies mi. Integer consectetur, felis nec aliquam sollicitudin, mi turpis hendrerit elit, non luctus nibh nulla eu nisi. Integer pretium arcu nec sollicitudin molestie. Maecenas efficitur hendrerit cursus. Pellentesque eu pellentesque mi.</p>
 </div>
 <script src="https://gist.github.com/iacchus/35fcee9ca4fe705ba2b2f4dd0951e273.js"></script>]]></description><link>https://iacchus.github.io/2016/07/27/Testing-Jupyter-Notebook-Embed.html</link><guid isPermaLink="true">https://iacchus.github.io/2016/07/27/Testing-Jupyter-Notebook-Embed.html</guid><dc:creator><![CDATA[Iacchus Mercurius]]></dc:creator><pubDate>Wed, 27 Jul 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Lorem Ipsum Tertius]]></title><description><![CDATA[<div class="paragraph">
