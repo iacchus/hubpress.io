@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[The Leet Crafting]]></title><description><![CDATA[This is a weblog on philosophy and arts]]></description><link>https://iacchus.github.io</link><image><url>images/wallhaven-413234.jpg</url><title>The Leet Crafting</title><link>https://iacchus.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 02 Aug 2016 22:58:22 GMT</lastBuildDate><atom:link href="https://iacchus.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Testing embed ipython notebook as html]]></title><description><![CDATA[<div id="preamble">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[The Leet Crafting]]></title><description><![CDATA[This is a weblog on philosophy and arts]]></description><link>https://iacchus.github.io</link><image><url>images/wallhaven-413234.jpg</url><title>The Leet Crafting</title><link>https://iacchus.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 02 Aug 2016 23:47:39 GMT</lastBuildDate><atom:link href="https://iacchus.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Testing embed ipython notebook as html]]></title><description><![CDATA[<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>Iframe</p>
@@ -7,6 +7,50 @@
 <div class="content">
 <pre>&lt;script&gt;$(document).ready(function(){ $("#lolzwat").load("https://rawgit.com/iacchus/iacchus.github.io/master/ipynb-html/Untitled3.html");})&lt;/script&gt;</pre>
 </div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_can_be_done_to_implement_this_script">What can be done to implement this script</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>IF WE CAN GET SITE DATA VIA CLIENT JS WE CAN DO THIS</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>An IFRAME with css class <code>.ipynb-embed</code> and an special attribute as the Filename "Untitled3.html".</p>
+</li>
+<li>
+<p>NO. Then, jquery looks for "iframe.ipynb-embed" and get the attribute, mounts with (variables in uppercase)</p>
+<div class="literalblock">
+<div class="content">
+<pre>https://rawgit.com / USERNAME / USERNAME.github.io / master / ipynb-html / FILENAME</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>OR RAWGIT CDN, using <code>?version=COMMITHASH</code> if we can get it by JS.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>GETs the address, fills the IFRAME, and write it to iframe <code>body</code>. NO. Then, sets iframe width and height. (if not set width and <code>display: none</code> before, in css, then Visible via the script load.)</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>IF WE CANNOT GET SITE DATA VIA CLIENT JS THEN?</strong></p>
+</div>
+<div class="paragraph">
+<p>?</p>
 </div>
 <iframe class="embedme" id="lolzwat"></iframe>
 </div>
