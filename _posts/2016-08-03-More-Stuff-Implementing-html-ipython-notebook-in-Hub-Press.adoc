@@ -33,9 +33,14 @@ $(document).ready(function(){
         });
 });
 ----
-2
+2. Create `ipynb-html/` directory inside your HubPress repo, at the root directory (like `images/`). Put the html file there inside. 
 
-3. Post A Iframe with the class 
+3. Post A Iframe with the class `.ipynb-embed` and an atribute `data-filename` with the ipynb filename you want to embed.
+
 ----
+++++
 <iframe class="ipynb-embed" data-filename="Untitled3.html"></iframe>
+++++
 ----
+
+4. Publish.
