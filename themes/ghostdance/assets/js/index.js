@@ -107,6 +107,34 @@ var $authorhead = $('#author-head');
 		/*$('ul li').before('<span class="bult fa fa-asterisk icon-asterisk"></span>');
 		$('blockquote p').prepend('<span class="quo icon-quote-left"></span>');
 		$('blockquote p').append('<span class="quo icon-quote-right"></span>');*/
+
+		myrepo = window.location.host
+		myuser = myrepo.split(".")[0]
+
+		myhack = document.styleSheets[0].href
+		mysplit = myhack.split("?")[1]
+		mycommit = mysplit.split("=")[1]
+
+		function mydothis(el, myurl)
+		{
+			$.get(myurl,
+				function(response) {
+					$(el).contents().find('body').append(response);
+					$(el).height( $(el).contents().height() );	
+				}
+			);
+		}
+		$("iframe.ipynb-embed").each(function(){
+			filename = $(this).data("filename");
+
+			// https://rawgit.com - not affiliated with GITHUB but a good service
+			myurl = "https://cdn.rawgit.com/" + myuser + "/" + myrepo + "/master/ipynb-html/" + filename + "?v=" + mycommit ;
+
+			mydothis(this, myurl)
+
+		//	console.log("el:" + this + " myurl: " + myurl);
+		});
+
 	});
 	
 	/*$post.each(function () {
