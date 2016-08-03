@@ -22,12 +22,12 @@ var $authorhead = $('#author-head');
 	}
 	$(document).ready(function(){
 
-		myrepo = window.location.host
-		myuser = myrepo.split(".")[0]
+		var myrepo = window.location.host
+		var myuser = myrepo.split(".")[0]
 
-		myhack = document.styleSheets[0].href
-		mysplit = myhack.split("?")[1]
-		mycommit = mysplit.split("=")[1]
+		var myhack = document.styleSheets[0].href
+		var mysplit = myhack.split("?")[1]
+		var mycommit = mysplit.split("=")[1]
 
 		function mydothis(el, myurl)
 		{
@@ -39,7 +39,7 @@ var $authorhead = $('#author-head');
 			);
 		}
 		$("iframe.ipynb-embed").each(function(){
-			filename = $(this).data("filename");
+			var filename = $(this).data("filename");
 
 			// https://rawgit.com - not affiliated with GITHUB but a good service
 			myurl = "https://cdn.rawgit.com/" + myuser + "/" + myrepo + "/master/ipynb-html/" + filename + "?v=" + mycommit ;
