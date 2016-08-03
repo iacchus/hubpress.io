@@ -6,19 +6,19 @@
     <meta name="google-site-verification" content="" />
 
     <title>Iacchus Mercurius - Page 1 - The Leet Crafting</title>
-    <link rel="shortcut icon" href="//iacchus.github.io/themes/ghostdance/assets/images/favicon.ico?v=1470187772342" />
+    <link rel="shortcut icon" href="//iacchus.github.io/themes/ghostdance/assets/images/favicon.ico?v=1470230457375" />
     <meta name="description" content="Well, what could I write about me in this short bio? Weell, anything." />
     <meta name="keywords" content="howto, come fare, web, backup, BitSync, OSMC, KODI, raspberry pi, cryptocurrency, KANO, linux" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="//iacchus.github.io/themes/ghostdance/assets/css/screen.css?v=1470187772342" />
+    <link rel="stylesheet" type="text/css" href="//iacchus.github.io/themes/ghostdance/assets/css/screen.css?v=1470230457375" />
 
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Old+Standard+TT:400,400italic,700|Roboto+Condensed:400,700,300,300italic, 400italic,700italic|PT+Sans+Narrow:400,700|Droid+Serif:400,700,400italic|Oswald:300,700|Inconsolata:400,700'>
 
-    <link rel="stylesheet" type="text/css" href="//iacchus.github.io/themes/ghostdance/assets/font-awesome-4.6.3/css/font-awesome.min.css?v=1470187772342" >
-    <!--<link rel="stylesheet" type="text/css" href="//iacchus.github.io/themes/ghostdance/assets/css/search.css?v=1470187772342" >-->
+    <link rel="stylesheet" type="text/css" href="//iacchus.github.io/themes/ghostdance/assets/font-awesome-4.6.3/css/font-awesome.min.css?v=1470230457375" >
+    <!--<link rel="stylesheet" type="text/css" href="//iacchus.github.io/themes/ghostdance/assets/css/search.css?v=1470230457375" >-->
 
     <link rel="canonical" href="https://iacchus.github.io/https://iacchus.github.io/author/iacchus/" />
     <meta name="referrer" content="origin" />
@@ -62,7 +62,7 @@ null
         </nav>
         <h2 class="blog-description">Well, what could I write about me in this short bio? Weell, anything.</h2>
 	<!--<a class='btn first'>See the Posts</a>-->
-        <span class="author-stats"><i class="fa fa-archive"></i> 8 posts</span>
+        <span class="author-stats"><i class="fa fa-archive"></i> 9 posts</span>
             
         <!-- <h4 id="search"></h4>
         <i class="fa fa-search"><input class="blog-description" id="search-field" placeholder=" looking for something?"/></i>
@@ -96,6 +96,87 @@ null
         <div class='post-holder'>
             
                     <article id="" class="post first" itemscope itemtype="https://schema.org/Article">
+            
+                <header class="post-header">
+                    
+                    <h2 class="post-title" itemprop="headline"><a href="https://iacchus.github.io/2016/08/03/More-Stuff-Implementing-html-ipython-notebook-in-Hub-Press.html">More Stuff Implementing html ipython notebook in HubPress</a></h2>
+                    <span class="post-meta"><i class="fa fa-calendar-o"></i> <time datetime="2016-08-03" itemprop="datePublished">03 Aug 2016</time>  <i class="fa fa-comments-o"></i> <a href="https://iacchus.github.io/2016/08/03/More-Stuff-Implementing-html-ipython-notebook-in-Hub-Press.html#disqus_thread">Comments</a> </span>
+                </header>
+                
+                <section class="post-content" itemprop="articleBody">
+                        <p class="post-description"><div class="olist arabic">
+    <ol class="arabic">
+    <li>
+    <p>The script to do it. Put it at the end of your repo USERNAME.github.io/themes/YOURTHEME/assets/js/YOURMAINJS.js</p>
+    </li>
+    </ol>
+    </div>
+    <div class="listingblock">
+    <div class="content">
+    <pre>$(document).ready(function(){
+    
+            var myrepo = window.location.host
+            var myuser = myrepo.split(".")[0]
+    
+            var myhack = document.styleSheets[0].href
+            var mysplit = myhack.split("?")[1]
+            var mycommit = mysplit.split("=")[1]
+    
+            function mydothis(el, myurl)
+            {
+                    $.get(myurl,
+                            function(response) {
+                                    $(el).contents().find('body').append(response);
+                                    $(el).height( $(el).contents().height() );
+                            }
+                    );
+            }
+            $("iframe.ipynb-embed").each(function(){
+                    var filename = $(this).data("filename");
+    
+                    // https://rawgit.com - not affiliated with GITHUB but a good service
+                    var myurl = "https://cdn.rawgit.com/" + myuser + "/" + myrepo + "/master/ipynb-html/" + filename + "?v=" + mycommit ;
+    
+                    mydothis(this, myurl)
+    
+            //      console.log("el:" + this + " myurl: " + myurl);
+            });
+    });</pre>
+    </div>
+    </div>
+    <div class="olist arabic">
+    <ol class="arabic">
+    <li>
+    <p>Create <code>ipynb-html/</code> directory inside your HubPress repo, at the root directory (like <code>images/</code>). Put the html file there inside.</p>
+    </li>
+    <li>
+    <p>Post A Iframe with the class <code>.ipynb-embed</code> and an atribute <code>data-filename</code> with the ipynb filename you want to embed.</p>
+    </li>
+    </ol>
+    </div>
+    <div class="listingblock">
+    <div class="content">
+    <pre>++++
+    &lt;iframe class="ipynb-embed" data-filename="Untitled3.html"&gt;&lt;/iframe&gt;
+    ++++</pre>
+    </div>
+    </div>
+    <div class="olist arabic">
+    <ol class="arabic">
+    <li>
+    <p>Publish.</p>
+    </li>
+    </ol>
+    </div></p>
+                </section>
+    
+            </article>
+            <div class='post-after'></div>
+        </div>
+    
+        <div class='post-holder'>
+            
+                        <article id="" class="post" itemscope itemtype="https://schema.org/Article">
             
                 <header class="post-header">
                     
@@ -1044,14 +1125,14 @@ if (typeof jQuery == 'undefined') {
     document.write('<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></'+'script>');
   }
     </script>  -->
-    <!--<script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/icons.js?v=1470187772342"></script>-->
-    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/jquery-1.7.1.min.js?v=1470187772342"></script>
-    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/index.js?v=1470187772342"></script>
-    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/jquery.fitvids.js?v=1470187772342"></script>
-    <!--<script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/ghostHunter/jquery.ghostHunter.min.js?v=1470187772342"></script>
-    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/search.js?v=1470187772342"></script>-->
+    <!--<script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/icons.js?v=1470230457375"></script>-->
+    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/jquery-1.7.1.min.js?v=1470230457375"></script>
+    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/index.js?v=1470230457375"></script>
+    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/jquery.fitvids.js?v=1470230457375"></script>
+    <!--<script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/ghostHunter/jquery.ghostHunter.min.js?v=1470230457375"></script>
+    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/search.js?v=1470230457375"></script>-->
     <!--<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/dsq_comments_count.js?v=1470187772342"></script>-->
+    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/dsq_comments_count.js?v=1470230457375"></script>-->
     
 </body>
 </html>
