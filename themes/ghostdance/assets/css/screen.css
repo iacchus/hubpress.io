@@ -355,7 +355,8 @@ pre {
     font-size: 1.4rem;
     line-height: 1.6rem;
     font-weight: 700;
-    white-space: pre;
+    //white-space: pre;
+    white-space: pre-wrap;
     overflow: auto;
     background-color: #fff;
     color: #333;
