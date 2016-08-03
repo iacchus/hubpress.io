@@ -350,18 +350,18 @@ pre {
     box-sizing: border-box;
     margin: 1.6em 0;
     width: 100%;
-    padding: 10px;
+    padding: 1.1rem;
     font-family: 'Inconsolata', monospace;
     font-size: 1.4rem;
     line-height: 1.6rem;
     font-weight: 700;
     white-space: pre;
     overflow: auto;
-    background-color: #444;
-    color: #fff;
+    background-color: #fff;
+    color: #333;
     border-radius: 2px;
-    //border: 1px solid #ccc;
-    text-shadow: 1px 1px rgba(0,0,0,0.6);
+    border: 1px solid #ccc;
+    //text-shadow: 1px 1px rgba(0,0,0,0.6);
 }
 
 /*.odd pre {
@@ -413,7 +413,7 @@ table td {
     line-height: 20px;
     text-align: left;
     vertical-align: top;
-    border-top: 1px solid #efefef;
+    border: 1px solid rgba(0,0,0,1);
 }
 
 table th { color: #000; }
