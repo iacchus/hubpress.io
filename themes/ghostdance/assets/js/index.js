@@ -31,7 +31,7 @@ var $authorhead = $('#author-head');
 
 		var myothersplit = myhack.split("?")[0]
 		var myanothersplit = myothersplit.split("/")
-		var myassets = Array( myanothersplit[3], myanothersplit[4], myanothersplit[5]) .join("/");
+		var myassets = Array( myanothersplit[3], myanothersplit[4], myanothersplit[5]).join("/");
 		var mycsss = myassets + "/css"
  
 		function mydothis(el, myurl, mycsss)
