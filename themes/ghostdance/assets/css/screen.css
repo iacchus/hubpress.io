@@ -1020,10 +1020,10 @@ article.tag-draft > section.post-content:before
 @-moz-keyframes draaft { 0% { color: #fff; } 50% { color: transparent; text-shadow: none; } 100% { color: #fff; }  }
 @keyframes draaft { 0% { color: #fff; } 50% { color: transparent; text-shadow: none; } 100% { color: #fff; }  }
 
-ipynb-embed {
+.ipynb-embed {
 	width: 100%;
 	border: 1px solid #ccc;
-	content: "Trying to load ipython notebook";
+	content: "Loading iPython notebook from RawGit..";
 }
 
 /* Keep large images within the bounds of the post-width */
