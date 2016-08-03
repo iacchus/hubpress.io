@@ -33,9 +33,12 @@ var $authorhead = $('#author-head');
 		{
 			$.get(myurl,
 				function(response) {
+					//$(el).contents().find("body").append("<style type=\"text/css\">body{padding:33px;}</style>");
+					$(el).contents().find("body").append('<link rel="stylesheet" src="../css/ipynb-custom.css" />'); // FIXME!!
 					$(el).contents().find('body').append(response);
 					$(el).height( $(el).contents().height() );	
-				}
+				},
+				"html"
 			);
 		}
 		$("iframe.ipynb-embed").each(function(){
