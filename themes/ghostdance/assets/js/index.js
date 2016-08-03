@@ -42,7 +42,7 @@ var $authorhead = $('#author-head');
 			var filename = $(this).data("filename");
 
 			// https://rawgit.com - not affiliated with GITHUB but a good service
-			myurl = "https://cdn.rawgit.com/" + myuser + "/" + myrepo + "/master/ipynb-html/" + filename + "?v=" + mycommit ;
+			var myurl = "https://cdn.rawgit.com/" + myuser + "/" + myrepo + "/master/ipynb-html/" + filename + "?v=" + mycommit ;
 
 			mydothis(this, myurl)
 
