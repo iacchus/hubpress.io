@@ -4,7 +4,7 @@
 
 [[my test text]]
 [source,javascript]
-ex-test.js
+.ex-test.js
 ----
 $(document).ready(function(){
 
