@@ -351,15 +351,17 @@ pre {
     margin: 1.6em 0;
     width: 100%;
     padding: 10px;
-    font-family: 'Inconsolata', monospace, sans-serif;
+    font-family: 'Inconsolata', monospace;
     font-size: 1.4rem;
     line-height: 1.6rem;
     font-weight: 700;
     white-space: pre;
     overflow: auto;
-    /*background: #F7FAFB;*/
+    background-color: #444;
+    color: #fff;
     border-radius: 2px;
-    border: 1px solid #ccc;
+    //border: 1px solid #ccc;
+    text-shadow: 1px 1px rgba(0,0,0,0.6);
 }
 
 /*.odd pre {
