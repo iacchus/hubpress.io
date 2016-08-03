@@ -2,6 +2,6 @@ body {
 	padding: 0;
 }
 
-div#notebook {
-	padding: 0;
+#notebook {
+	padding: 0 !important;
 }
