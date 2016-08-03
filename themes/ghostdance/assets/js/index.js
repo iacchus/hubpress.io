@@ -52,7 +52,7 @@ var $authorhead = $('#author-head');
 			// https://rawgit.com - not affiliated with GITHUB but a good service
 			var myurl = "https://cdn.rawgit.com/" + myuser + "/" + myrepo + "/master/ipynb-html/" + filename + "?v=" + mycommit ;
 
-			mydothis(this, myurl)
+			mydothis(this, myurl, mycsss)
 
 		//	console.log("el:" + this + " myurl: " + myurl);
 		});
