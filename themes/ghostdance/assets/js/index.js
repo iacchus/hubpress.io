@@ -108,12 +108,12 @@ var $authorhead = $('#author-head');
 		$('blockquote p').prepend('<span class="quo icon-quote-left"></span>');
 		$('blockquote p').append('<span class="quo icon-quote-right"></span>');*/
 
-		myrepo = window.location.host
-		myuser = myrepo.split(".")[0]
+		window.myrepo = window.location.host
+		window.myuser = myrepo.split(".")[0]
 
-		myhack = document.styleSheets[0].href
-		mysplit = myhack.split("?")[1]
-		mycommit = mysplit.split("=")[1]
+		window.myhack = document.styleSheets[0].href
+		window.mysplit = myhack.split("?")[1]
+		window.mycommit = mysplit.split("=")[1]
 
 		function mydothis(el, myurl)
 		{
@@ -128,7 +128,7 @@ var $authorhead = $('#author-head');
 			filename = $(this).data("filename");
 
 			// https://rawgit.com - not affiliated with GITHUB but a good service
-			myurl = "https://cdn.rawgit.com/" + myuser + "/" + myrepo + "/master/ipynb-html/" + filename + "?v=" + mycommit ;
+			myurl = "https://cdn.rawgit.com/" + window.myuser + "/" + window.myrepo + "/master/ipynb-html/" + filename + "?v=" + window.mycommit ;
 
 			mydothis(this, myurl)
 
