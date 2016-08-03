@@ -356,7 +356,7 @@ pre {
     line-height: 1.6rem;
     font-weight: 700;
     //white-space: pre;
-    white-space: pre-wrap;
+    white-space: pre;
     overflow: auto;
     background-color: #fff;
     color: #333;
