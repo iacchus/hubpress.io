@@ -6,19 +6,19 @@
     <meta name="google-site-verification" content="" />
 
     <title>The Leet Crafting</title>
-    <link rel="shortcut icon" href="//iacchus.github.io/themes/ghostdance/assets/images/favicon.ico?v=1470236183877" />
+    <link rel="shortcut icon" href="//iacchus.github.io/themes/ghostdance/assets/images/favicon.ico?v=1470250852557" />
     <meta name="description" content="" />
     <meta name="keywords" content="howto, come fare, web, backup, BitSync, OSMC, KODI, raspberry pi, cryptocurrency, KANO, linux" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="//iacchus.github.io/themes/ghostdance/assets/css/screen.css?v=1470236183877" />
+    <link rel="stylesheet" type="text/css" href="//iacchus.github.io/themes/ghostdance/assets/css/screen.css?v=1470250852557" />
 
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Old+Standard+TT:400,400italic,700|Roboto+Condensed:400,700,300,300italic, 400italic,700italic|PT+Sans+Narrow:400,700|Droid+Serif:400,700,400italic|Oswald:300,700|Inconsolata:400,700'>
 
-    <link rel="stylesheet" type="text/css" href="//iacchus.github.io/themes/ghostdance/assets/font-awesome-4.6.3/css/font-awesome.min.css?v=1470236183877" >
-    <!--<link rel="stylesheet" type="text/css" href="//iacchus.github.io/themes/ghostdance/assets/css/search.css?v=1470236183877" >-->
+    <link rel="stylesheet" type="text/css" href="//iacchus.github.io/themes/ghostdance/assets/font-awesome-4.6.3/css/font-awesome.min.css?v=1470250852557" >
+    <!--<link rel="stylesheet" type="text/css" href="//iacchus.github.io/themes/ghostdance/assets/css/search.css?v=1470250852557" >-->
 
     <link rel="canonical" href="https://iacchus.github.io/" />
     <meta name="referrer" content="origin" />
@@ -92,78 +92,85 @@ null
                 </header>
                 
                 <section class="post-content" itemprop="articleBody">
-                        <p class="post-description"><div id="preamble">
-    <div class="sectionbody">
-    <div class="ulist">
+                        <p class="post-description"><div class="ulist">
     <ul>
     <li>
     <p>The script to do it. Put it at the end of your repo USERNAME.github.io/themes/YOURTHEME/assets/js/YOURMAINJS.js</p>
     </li>
     </ul>
     </div>
+    <div class="paragraph">
+    <p>[[my test text]]</p>
+    </div>
     <div class="listingblock">
     <div class="content">
-    <pre>$(document).ready(function(){
-    
-            var myrepo = window.location.host
-            var myuser = myrepo.split(".")[0]
-    
-            var myhack = document.styleSheets[0].href
-            var mysplit = myhack.split("?")[1]
-            var mycommit = mysplit.split("=")[1]
-    
-            function mydothis(el, myurl)
-            {
-                    $.get(myurl,
-                            function(response) {
-                                    $(el).contents().find('body').append(response);
-                                    $(el).height( $(el).contents().height() );
-                            }
-                    );
-            }
-            $("iframe.ipynb-embed").each(function(){
-                    var filename = $(this).data("filename");
-    
-                    // https://rawgit.com - not affiliated with GITHUB but a good service
-                    var myurl = "https://cdn.rawgit.com/" + myuser + "/" + myrepo + "/master/ipynb-html/" + filename + "?v=" + mycommit ;
-    
-                    mydothis(this, myurl)
-    
-            //      console.log("el:" + this + " myurl: " + myurl);
+    <pre class="highlight"><code class="language-javascript" data-lang="javascript">ex-test.js
+    ----
+    $(document).ready(function(){</code></pre>
+    </div>
+    </div>
+    <div class="literalblock">
+    <div class="content">
+    <pre>var myrepo = window.location.host
+    var myuser = myrepo.split(".")[0]</pre>
+    </div>
+    </div>
+    <div class="literalblock">
+    <div class="content">
+    <pre>var myhack = document.styleSheets[0].href
+    var mysplit = myhack.split("?")[1]
+    var mycommit = mysplit.split("=")[1]</pre>
+    </div>
+    </div>
+    <div class="literalblock">
+    <div class="content">
+    <pre>function mydothis(el, myurl)
+    {
+            $.get(myurl,
+                    function(response) {
+                            $(el).contents().find('body').append(response);
+                            $(el).height( $(el).contents().height() );
+                    }
+            );
+    }
+    $("iframe.ipynb-embed").each(function(){
+            var filename = $(this).data("filename");</pre>
+    </div>
+    </div>
+    <div class="literalblock">
+    <div class="content">
+    <pre>// https://rawgit.com - not affiliated with GITHUB but a good service
+    var myurl = "https://cdn.rawgit.com/" + myuser + "/" + myrepo + "/master/ipynb-html/" + filename + "?v=" + mycommit ;</pre>
+    </div>
+    </div>
+    <div class="literalblock">
+    <div class="content">
+    <pre>mydothis(this, myurl)</pre>
+    </div>
+    </div>
+    <div class="literalblock">
+    <div class="content">
+    <pre>        //      console.log("el:" + this + " myurl: " + myurl);
             });
     });</pre>
     </div>
     </div>
-    <div class="ulist">
-    <ul>
-    <li>
-    <p>Create <code>ipynb-html/</code> directory inside your HubPress repo, at the root directory (like <code>images/</code>). Put the html file there inside.</p>
-    </li>
-    <li>
-    <p>Post A Iframe with the class <code>.ipynb-embed</code> and an atribute <code>data-filename</code> with the ipynb filename you want to embed.</p>
-    </li>
-    </ul>
-    </div>
     <div class="listingblock">
     <div class="content">
-    <pre>++++
+    <pre>* Create `ipynb-html/` directory inside your HubPress repo, at the root directory (like `images/`). Put the html file there inside.
+    * Post A Iframe with the class `.ipynb-embed` and an atribute `data-filename` with the ipynb filename you want to embed.</pre>
+    </div>
+    </div>
+    <iframe class="ipynb-embed" data-filename="Untitled3.html"></iframe>
+    <div class="listingblock">
+    <div class="content">
+    <pre>* Publish.
+    
+    == That's me testing
+    
+    ++++
     &lt;iframe class="ipynb-embed" data-filename="Untitled3.html"&gt;&lt;/iframe&gt;
     ++++</pre>
-    </div>
-    </div>
-    <div class="ulist">
-    <ul>
-    <li>
-    <p>Publish.</p>
-    </li>
-    </ul>
-    </div>
-    </div>
-    </div>
-    <div class="sect1">
-    <h2 id="_that_s_me_testing">That&#8217;s me testing</h2>
-    <div class="sectionbody">
-    <iframe class="ipynb-embed" data-filename="Untitled3.html"></iframe>
     </div>
     </div></p>
                 </section>
@@ -1124,14 +1131,14 @@ if (typeof jQuery == 'undefined') {
     document.write('<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></'+'script>');
   }
     </script>  -->
-    <!--<script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/icons.js?v=1470236183877"></script>-->
-    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/jquery-1.7.1.min.js?v=1470236183877"></script>
-    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/index.js?v=1470236183877"></script>
-    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/jquery.fitvids.js?v=1470236183877"></script>
-    <!--<script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/ghostHunter/jquery.ghostHunter.min.js?v=1470236183877"></script>
-    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/search.js?v=1470236183877"></script>-->
+    <!--<script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/icons.js?v=1470250852557"></script>-->
+    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/jquery-1.7.1.min.js?v=1470250852557"></script>
+    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/index.js?v=1470250852557"></script>
+    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/jquery.fitvids.js?v=1470250852557"></script>
+    <!--<script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/ghostHunter/jquery.ghostHunter.min.js?v=1470250852557"></script>
+    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/search.js?v=1470250852557"></script>-->
     <!--<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/dsq_comments_count.js?v=1470236183877"></script>-->
+    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/dsq_comments_count.js?v=1470250852557"></script>-->
     
 </body>
 </html>
