@@ -414,7 +414,7 @@ table td {
     line-height: 20px;
     text-align: left;
     vertical-align: top;
-    border: 1px solid rgba(0,0,0,1);
+    border: 1px solid rgba(0,0,0,0.2);
 }
 
 table th { color: #000; }
