@@ -1,3 +1,7 @@
 body {
-	padding: 0px !important;
+	padding: 0;
+}
+
+div #notebook {
+	padding: 0;
 }
