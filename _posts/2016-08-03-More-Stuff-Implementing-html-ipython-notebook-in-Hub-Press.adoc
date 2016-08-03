@@ -3,7 +3,7 @@
 * The script to do it. Put it at the end of your repo USERNAME.github.io/themes/YOURTHEME/assets/js/YOURMAINJS.js
 
 [[my test text]]
-[source,javascript]
+[source,js]
 .ex-test.js
 ----
 $(document).ready(function(){
