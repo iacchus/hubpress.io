@@ -1,6 +1,6 @@
 = More Stuff Implementing html ipython notebook in HubPress
 
-1. The script to do it. Put it at the end of your repo USERNAME.github.io/themes/YOURTHEME/assets/js/YOURMAINJS.js
+* The script to do it. Put it at the end of your repo USERNAME.github.io/themes/YOURTHEME/assets/js/YOURMAINJS.js
 ----
 $(document).ready(function(){
 
@@ -32,14 +32,18 @@ $(document).ready(function(){
         });
 });
 ----
-
-2. Create `ipynb-html/` directory inside your HubPress repo, at the root directory (like `images/`). Put the html file there inside. 
-
-3. Post A Iframe with the class `.ipynb-embed` and an atribute `data-filename` with the ipynb filename you want to embed.
+* Create `ipynb-html/` directory inside your HubPress repo, at the root directory (like `images/`). Put the html file there inside. 
+* Post A Iframe with the class `.ipynb-embed` and an atribute `data-filename` with the ipynb filename you want to embed.
 ----
 ++++
 <iframe class="ipynb-embed" data-filename="Untitled3.html"></iframe>
 ++++
 ----
 
-4. Publish.
+* Publish.
+
+== That's me testing
+
+++++
+<iframe class="ipynb-embed" data-filename="Untitled3.html"></iframe>
+++++
