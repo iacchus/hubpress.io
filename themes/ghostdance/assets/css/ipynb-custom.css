@@ -2,7 +2,7 @@
 
 body {
 	padding: 0px !important;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif !important;
 }
 
 div#notebook {
