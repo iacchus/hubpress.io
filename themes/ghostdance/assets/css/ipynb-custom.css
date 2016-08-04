@@ -1,5 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans+Condensed:300|Oswald:700|Roboto:400,700&subset=latin,greek,greek-ext,latin-ext,cyrillic-ext,cyrillic);
+
 body {
 	padding: 0px !important;
+	font-family: 'Roboto', sans-serif;
 }
 
 div#notebook {
