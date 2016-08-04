@@ -40,7 +40,10 @@ var $authorhead = $('#author-head');
 				function(response) {
 					//$(el).contents().find("body").append("<style type=\"text/css\">body{padding:33px;}</style>");
 					$(el).contents().find("head").append('<link rel="stylesheet" type="text/css" href="' + mycsss +'/ipynb-custom.css" />');
-					$(el).contents().find("head").append('<link rel="stylesheet" type="text/css" href="' + mycsss +'/screen.css" />');
+
+					// if you want Jupyter Notebook to have template's theme, uncomment the line below
+					//$(el).contents().find("head").append('<link rel="stylesheet" type="text/css" href="' + mycsss +'/screen.css" />');
+					
 					$(el).contents().find('body').append(response);
 					$(el).height( $(el).contents().height() );	
 				},
