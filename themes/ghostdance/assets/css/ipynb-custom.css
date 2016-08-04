@@ -6,7 +6,7 @@ div#notebook {
 	padding: 0px !important;
 }
 
-@media only screen and (max-width: 1130px) {
+@media only screen and (max-width: 540px) {
 	div.inner_cell {
 		flex: none !important;
 	}
