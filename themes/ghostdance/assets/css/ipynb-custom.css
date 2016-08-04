@@ -6,11 +6,13 @@ div#notebook {
 	padding: 0px !important;
 }
 
-div.inner_cell {
-	flex: none !important;
-}
+@media only screen and (max-width: 1130px) {
+	div.inner_cell {
+		flex: none !important;
+	}
 
 
-div.output_subarea {
-	flex: none !important;
+	div.output_subarea {
+		flex: none !important;
+	}
 }
