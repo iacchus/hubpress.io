@@ -9,7 +9,7 @@ div#notebook {
 @media only screen and (max-width: 540px) {
 	div.inner_cell {
 		flex: none !important;
-		max-width: 100% !mportant;
+		max-width: 100% !important;
 	}
 
 
