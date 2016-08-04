@@ -9,11 +9,12 @@ div#notebook {
 @media only screen and (max-width: 540px) {
 	div.inner_cell {
 		flex: none !important;
+		max-width: 100% !mportant;
 	}
 
 
 	div.output_subarea {
 		flex: none !important;
-		min-width: 100%;
+		min-width: 100% !important;
 	}
 }
