@@ -5,3 +5,7 @@ body {
 div#notebook {
 	padding: 0px !important;
 }
+
+div.inner_cell {
+	flex: none !important;
+}
