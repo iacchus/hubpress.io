@@ -9,3 +9,8 @@ div#notebook {
 div.inner_cell {
 	flex: none !important;
 }
+
+
+div.output_subarea {
+	flex: none !important;
+}
