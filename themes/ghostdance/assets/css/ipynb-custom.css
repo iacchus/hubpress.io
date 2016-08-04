@@ -14,5 +14,6 @@ div#notebook {
 
 	div.output_subarea {
 		flex: none !important;
+		min-width: 100%;
 	}
 }
