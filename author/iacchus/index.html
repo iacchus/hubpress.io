@@ -6,19 +6,19 @@
     <meta name="google-site-verification" content="" />
 
     <title>Iacchus Mercurius - Page 1 - The Leet Crafting</title>
-    <link rel="shortcut icon" href="//iacchus.github.io/themes/ghostdance/assets/images/favicon.ico?v=1470356259032" />
+    <link rel="shortcut icon" href="//iacchus.github.io/themes/ghostdance/assets/images/favicon.ico?v=1470358851801" />
     <meta name="description" content="Well, what could I write about me in this short bio? Weell, anything." />
     <meta name="keywords" content="howto, come fare, web, backup, BitSync, OSMC, KODI, raspberry pi, cryptocurrency, KANO, linux" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" type="text/css" href="//iacchus.github.io/themes/ghostdance/assets/css/screen.css?v=1470356259032" />
+    <link rel="stylesheet" type="text/css" href="//iacchus.github.io/themes/ghostdance/assets/css/screen.css?v=1470358851801" />
 
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Old+Standard+TT:400,400italic,700|Roboto+Condensed:400,700,300,300italic, 400italic,700italic|PT+Sans+Narrow:400,700|Droid+Serif:400,700,400italic|Oswald:300,700|Inconsolata:400,700'>
 
-    <link rel="stylesheet" type="text/css" href="//iacchus.github.io/themes/ghostdance/assets/font-awesome-4.6.3/css/font-awesome.min.css?v=1470356259032" >
-    <!--<link rel="stylesheet" type="text/css" href="//iacchus.github.io/themes/ghostdance/assets/css/search.css?v=1470356259032" >-->
+    <link rel="stylesheet" type="text/css" href="//iacchus.github.io/themes/ghostdance/assets/font-awesome-4.6.3/css/font-awesome.min.css?v=1470358851801" >
+    <!--<link rel="stylesheet" type="text/css" href="//iacchus.github.io/themes/ghostdance/assets/css/search.css?v=1470358851801" >-->
 
     <link rel="canonical" href="https://iacchus.github.io/https://iacchus.github.io/author/iacchus/" />
     <meta name="referrer" content="origin" />
@@ -62,7 +62,7 @@ null
         </nav>
         <h2 class="blog-description">Well, what could I write about me in this short bio? Weell, anything.</h2>
 	<!--<a class='btn first'>See the Posts</a>-->
-        <span class="author-stats"><i class="fa fa-archive"></i> 9 posts</span>
+        <span class="author-stats"><i class="fa fa-archive"></i> 8 posts</span>
             
         <!-- <h4 id="search"></h4>
         <i class="fa fa-search"><input class="blog-description" id="search-field" placeholder=" looking for something?"/></i>
@@ -105,125 +105,6 @@ null
                 
                 <section class="post-content" itemprop="articleBody">
                         <p class="post-description"><iframe class="ipynb-embed" data-filename="Untitled3.html"></iframe></p>
-                </section>
-    
-            </article>
-            <div class='post-after'></div>
-        </div>
-    
-        <div class='post-holder'>
-            
-                        <article id="" class="post" itemscope itemtype="https://schema.org/Article">
-            
-                <header class="post-header">
-                    
-                    <h2 class="post-title" itemprop="headline"><a href="https://iacchus.github.io/2016/08/02/Testing-embed-ipython-notebook-as-html.html">Testing embed ipython notebook as html</a></h2>
-                    <span class="post-meta"><i class="fa fa-calendar-o"></i> <time datetime="2016-08-02" itemprop="datePublished">02 Aug 2016</time>  <i class="fa fa-comments-o"></i> <a href="https://iacchus.github.io/2016/08/02/Testing-embed-ipython-notebook-as-html.html#disqus_thread">Comments</a> </span>
-                </header>
-                
-                <section class="post-content" itemprop="articleBody">
-                        <p class="post-description"><div id="preamble">
-    <div class="sectionbody">
-    <div class="paragraph">
-    <p>Iframe</p>
-    </div>
-    <div class="literalblock">
-    <div class="content">
-    <pre>&lt;script&gt;$(document).ready(function(){ $("#lolzwat").load("https://rawgit.com/iacchus/iacchus.github.io/master/ipynb-html/Untitled3.html");})&lt;/script&gt;</pre>
-    </div>
-    </div>
-    <iframe class="ipynb-embed" data-filename="Untitled3.html" style="width:100%;border:1px solid #ccc;"></iframe>
-    </div>
-    </div>
-    <div class="sect1">
-    <h2 id="_what_can_be_done_to_implement_this_script">What can be done to implement this script</h2>
-    <div class="sectionbody">
-    <div class="paragraph">
-    <p><strong>IF WE CAN GET SITE DATA VIA CLIENT JS WE CAN DO THIS</strong></p>
-    </div>
-    <div class="olist arabic">
-    <ol class="arabic">
-    <li>
-    <p>An IFRAME with css class <code>.ipynb-embed</code> and an special attribute as the Filename "Untitled3.html".</p>
-    </li>
-    <li>
-    <p>NO. Then, jquery looks for "iframe.ipynb-embed" and get the attribute, mounts with (variables in uppercase)</p>
-    <div class="literalblock">
-    <div class="content">
-    <pre>https://rawgit.com / USERNAME / USERNAME.github.io / master / ipynb-html / FILENAME</pre>
-    </div>
-    </div>
-    </li>
-    </ol>
-    </div>
-    <div class="paragraph">
-    <p>OR RAWGIT CDN, using <code>?version=COMMITHASH</code> if we can get it by JS.</p>
-    </div>
-    <div class="olist arabic">
-    <ol class="arabic">
-    <li>
-    <p>GETs the address, fills the IFRAME, and write it to iframe <code>body</code>. NO. Then, sets iframe width and height. (if not set width and <code>display: none</code> before, in css, then Visible via the script load.)</p>
-    </li>
-    </ol>
-    </div>
-    <div class="paragraph">
-    <p><strong>IF WE CANNOT GET SITE DATA VIA CLIENT JS THEN?</strong></p>
-    </div>
-    <div class="paragraph">
-    <p>?</p>
-    </div>
-    <iframe class="embedme" id="lolzwat"></iframe>
-    </div>
-    </div>
-    <div class="sect1">
-    <h2 id="_how_did_i_amnaged_to_do_it">HOW did I amnaged to do it:</h2>
-    <div class="sectionbody">
-    <div class="sect2">
-    <h3 id="_1_post_an_iframe">1. Post an iframe</h3>
-    <div class="listingblock">
-    <div class="content">
-    <pre>++++
-    &lt;iframe class="embedme" id="lolzwat"&gt;&lt;/iframe&gt;
-    ++++</pre>
-    </div>
-    </div>
-    </div>
-    <div class="sect2">
-    <h3 id="_2_load_via_jquery_ajax_the_contents_of_the_html_via_rawgit_com">2. Load via jquery/ajax the contents of the .html via rawgit.com</h3>
-    <div class="listingblock">
-    <div class="content">
-    <pre>$.get("https://rawgit.com/iacchus/iacchus.github.io/master/ipynb-html/Untitled3.html",
-        function(response)
-        {
-            $("#lolzwat").contents().find('body').append(response);
-        }
-    );</pre>
-    </div>
-    </div>
-    </div>
-    <div class="sect2">
-    <h3 id="_3_set_the_iframe_width_to_100_as_this_value_we_know_by_the_parent_container">3. Set the iframe width to 100%, ( as this value we know by the parent-container)</h3>
-    <div class="listingblock">
-    <div class="content">
-    <pre>#lolzwat {
-    width: 100%;
-    }</pre>
-    </div>
-    </div>
-    </div>
-    <div class="sect2">
-    <h3 id="_4_use_js_to_get_the_content_size_of_the_iframe_and_set_the_iframe_size_to_it">4. Use JS to get the content size of the iframe, and set the iframe size to it</h3>
-    <div class="listingblock">
-    <div class="content">
-    <pre>$('#lolzwat').height( $('#lolzwat').contents().height() );</pre>
-    </div>
-    </div>
-    <div class="paragraph">
-    <p>ipynb::Untitled3.html[]</p>
-    </div>
-    </div>
-    </div>
-    </div></p>
                 </section>
     
             </article>
@@ -1062,14 +943,14 @@ if (typeof jQuery == 'undefined') {
     document.write('<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></'+'script>');
   }
     </script>  -->
-    <!--<script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/icons.js?v=1470356259032"></script>-->
-    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/jquery-1.7.1.min.js?v=1470356259032"></script>
-    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/index.js?v=1470356259032"></script>
-    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/jquery.fitvids.js?v=1470356259032"></script>
-    <!--<script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/ghostHunter/jquery.ghostHunter.min.js?v=1470356259032"></script>
-    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/search.js?v=1470356259032"></script>-->
+    <!--<script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/icons.js?v=1470358851801"></script>-->
+    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/jquery-1.7.1.min.js?v=1470358851801"></script>
+    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/index.js?v=1470358851801"></script>
+    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/jquery.fitvids.js?v=1470358851801"></script>
+    <!--<script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/ghostHunter/jquery.ghostHunter.min.js?v=1470358851801"></script>
+    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/search.js?v=1470358851801"></script>-->
     <!--<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/dsq_comments_count.js?v=1470356259032"></script>-->
+    <script type="text/javascript" src= "//iacchus.github.io/themes/ghostdance/assets/js/dsq_comments_count.js?v=1470358851801"></script>-->
     
 </body>
 </html>
