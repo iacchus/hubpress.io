@@ -14,8 +14,10 @@ div#notebook-container {
 }
 
 h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans Condensed', 'Roboto', sans-serif;
 	letter-spacing: normal !important;
 	line-height: normal !important;
+	font-weight: 700;
 }
 
 @media only screen and (max-width: 540px) {
