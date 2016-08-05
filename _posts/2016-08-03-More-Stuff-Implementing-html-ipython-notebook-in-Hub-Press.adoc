@@ -1,50 +1,5 @@
 = More Stuff Implementing html ipython notebook in HubPress
 
-* The script to do it. Put it at the end of your repo USERNAME.github.io/themes/YOURTHEME/assets/js/YOURMAINJS.js
-
-----
-$(document).ready(function(){
-
-        var myrepo = window.location.host
-        var myuser = myrepo.split(".")[0]
-
-        var myhack = document.styleSheets[0].href
-        var mysplit = myhack.split("?")[1]
-        var mycommit = mysplit.split("=")[1]
-
-        function mydothis(el, myurl)
-        {
-                $.get(myurl,    
-                        function(response) {
-                                $(el).contents().find('body').append(response);
-                                $(el).height( $(el).contents().height() );
-                        }
-                );
-        }
-        $("iframe.ipynb-embed").each(function(){
-                var filename = $(this).data("filename");
-        
-                // https://rawgit.com - not affiliated with GITHUB but a good service
-                var myurl = "https://cdn.rawgit.com/" + myuser + "/" + myrepo + "/master/ipynb-html/" + filename + "?v=" + mycommit ;
-        
-                mydothis(this, myurl)
-         
-        //      console.log("el:" + this + " myurl: " + myurl);
-        });
-});
-----
-* Create `ipynb-html/` directory inside your HubPress repo, at the root directory (like `images/`). Put the html file there inside. 
-* Post A Iframe with the class `.ipynb-embed` and an atribute `data-filename` with the ipynb filename you want to embed.
-----
-++++
-<iframe class="ipynb-embed" data-filename="Untitled3.html"></iframe>
-++++
-----
-
-* Publish.
-
-== That's me testing
-
 ++++
 <iframe class="ipynb-embed" data-filename="Untitled3.html"></iframe>
 ++++
