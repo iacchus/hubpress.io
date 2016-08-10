@@ -22,6 +22,26 @@ var $authorhead = $('#author-head');
 	}
 	$(document).ready(function(){
 
+		if($("code.language-abc").length)
+		{
+			$.getScript("https://rawgit.com/iacchus/abcjs/master/bin/abcjs_basic_latest-min.js", function(){
+				var $tunes = $("code.language-abctune");
+					
+				for(var $i=0; $tunes[$i]; $i++)
+				{               
+					$("<div id=\"abctune-"+ $i +"\" class=\"abctune-rendered\"></div>").insertAfter($tunes[$i]);
+					ABCJS.renderAbc(
+						"abctune-"+$i, //container
+						$($tunes[$i]).text(), //abctune
+						{}, //parserParams
+						{ staffwidth: 620 }, //engraverParams
+						{} //renderParams
+						);
+					$($tunes[$i]).hide();
+				}
+			});
+		}
+
 		var myrepo = window.location.host
 		var myuser = myrepo.split(".")[0]
 
