@@ -24,7 +24,7 @@ var $authorhead = $('#author-head');
 
 		if($("code.language-abc").length)
 		{
-			$.getScript("https://rawgit.com/iacchus/abcjs/master/bin/abcjs_basic_2.1-min.js", function(){
+			$.getScript("https://cdn.rawgit.com/iacchus/abcjs/master/bin/abcjs_basic_1.2-min.js", function(){
 				var $tunes = $("code.language-abctune");
 					
 				for(var $i=0; $tunes[$i]; $i++)
