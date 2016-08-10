@@ -2,7 +2,7 @@
 
 This is a testing of an abc music notation embedding.
 
-```
+```abc
 X: 1
 T: Morrison's
 R: jig
