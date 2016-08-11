@@ -70,6 +70,29 @@ The HupPress themes are developed alike [Ghost](https://github.com/TryGhost/Ghos
 
 Why don't you also give a look at [Handlebars website](http://handlebarsjs.com/)...
 
+## ABC Musical Notation to Sheet Music
+
+This theme allows you to generate sheet music by using [abc musical notation](http://abcnotation.com/), writing a markdown GitHub-like code block with `abc` as syntax (three bacticks plus abc: \`\`\`abc).
+
+Example, for embedding Morrison's jig score you can create a abc notation code block this way:
+
+    ```abc
+    X: 1
+    T: Morrison's
+    R: jig
+    M: 6/8
+    L: 1/8
+    K: Edor
+    |:E3 B3|EBE AFD|EDE B3|dcB AFD|
+    E3 B3|EBE AFD|G3 FGA|dAG FED:|
+    Bee fee|aee fee|Bee fee|a2g fed|
+    Bee fee|aee fee|gfe d2A|BAG FGA|
+    Bee fee|aee fee|Bee fee|faf def|
+    g3 gfe|def g2d|edc d2A|BAG FED|
+    ```
+
+For this it uses [ABCJS](https://github.com/paulrosen/abcjs) script using [rawgit.com](https://rawgit.com) as third party service for serving the JS.
+
 ## Jupyter / iPython Notebook (html) Embed
 
 This theme allows to embed iPython Notebooks (exported as `.html`)
