@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[The Leet Crafting]]></title><description><![CDATA[This is a weblog on philosophy and arts]]></description><link>https://iacchus.github.io</link><image><url>images/wallhaven-413234.jpg</url><title>The Leet Crafting</title><link>https://iacchus.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Wed, 10 Aug 2016 16:19:35 GMT</lastBuildDate><atom:link href="https://iacchus.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Testing ABC js embed]]></title><description><![CDATA[<div class="paragraph">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[The Leet Crafting]]></title><description><![CDATA[This is a weblog on philosophy and arts]]></description><link>https://iacchus.github.io</link><image><url>images/wallhaven-413234.jpg</url><title>The Leet Crafting</title><link>https://iacchus.github.io</link></image><generator>RSS for Node</generator><lastBuildDate>Thu, 11 Aug 2016 14:01:32 GMT</lastBuildDate><atom:link href="https://iacchus.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Testing ABC js embed]]></title><description><![CDATA[<div class="paragraph">
 <p>This is a testing of an abc music notation embedding. ok.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>X: 1
+<pre class="highlight"><code class="language-abc" data-lang="abc">X: 1
 T: Morrison's
 R: jig
 M: 6/8
@@ -14,7 +14,7 @@ E3 B3|EBE AFD|G3 FGA|dAG FED:|
 Bee fee|aee fee|Bee fee|a2g fed|
 Bee fee|aee fee|gfe d2A|BAG FGA|
 Bee fee|aee fee|Bee fee|faf def|
-g3 gfe|def g2d|edc d2A|BAG FED|</pre>
+g3 gfe|def g2d|edc d2A|BAG FED|</code></pre>
 </div>
 </div>]]></description><link>https://iacchus.github.io/2016/08/09/Testing-ABC-js-embed.html</link><guid isPermaLink="true">https://iacchus.github.io/2016/08/09/Testing-ABC-js-embed.html</guid><dc:creator><![CDATA[Iacchus Mercurius]]></dc:creator><pubDate>Tue, 09 Aug 2016 00:00:00 GMT</pubDate></item><item><title><![CDATA[Testing userbar]]></title><description><![CDATA[<div class="imageblock">
 <div class="content">
