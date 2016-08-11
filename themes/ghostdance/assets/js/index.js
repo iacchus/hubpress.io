@@ -43,7 +43,7 @@ var $authorhead = $('#author-head');
 					$(tunes_code[$i]).text(), //abctune
 					{}, //parserParams
 					{ staffwidth: 620 }, //engraverParams
-					{} //renderParams
+					{ viewportHorizontal: true } //renderParams
 					);
 				//$(tunes_code[$i]).hide();
 			}

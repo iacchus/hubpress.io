@@ -384,7 +384,7 @@ pre.highlight {
     line-height: 1.6rem;
     //font-weight: 700;
     //white-space: pre;
-    white-space: pre-wrap;
+    white-space: pre-line !important;
     overflow: auto;
     background-color: #fff;
     color: #333;
