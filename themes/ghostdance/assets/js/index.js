@@ -12,6 +12,7 @@ var $sitehead = $('#site-head');
 
 var $authorhead = $('#author-head');
 
+
 /* Globals jQuery, document */
 (function ($) {
 	"use strict";
@@ -29,6 +30,14 @@ var $authorhead = $('#author-head');
 					
 				for(var $i=0; tunes_code[$i]; $i++)
 				{               
+					ws_strip="";
+					mystr="";
+
+					ws_strip = tunes_code[$1].text().split('\n');
+					for(aaa=0, ws_strip[aaa]; aaa++) { mystr+=ws_strip[aaa].trim() + "\n"; }
+					
+					$(tunes_code[$i]).text(mystr), //abctune
+
 					$("<div id=\"abctune-"+ $i +"\" class=\"abctune-rendered\"></div>").insertBefore(tunes_code[$i]);
 					ABCJS.renderAbc(
 						"abctune-"+$i, //container
