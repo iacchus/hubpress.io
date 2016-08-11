@@ -37,7 +37,7 @@ var $authorhead = $('#author-head');
 						{ staffwidth: 620 }, //engraverParams
 						{} //renderParams
 						);
-					$(tunes_code[$i]).hide();
+					//$(tunes_code[$i]).hide();
 				}
 			});
 		}
