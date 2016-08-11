@@ -343,7 +343,7 @@ code, tt {
     text-shadow: none !important;
 }
 
-code .language-abc {
+code.language-abc {
     display: block;
     background-color: #333;
     color: #fff;
