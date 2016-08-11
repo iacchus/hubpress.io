@@ -24,20 +24,20 @@ var $authorhead = $('#author-head');
 
 		if($("code.language-abc").length)
 		{
-			$.getScript("https://cdn.rawgit.com/iacchus/abcjs/master/bin/abcjs_basic_1.2-min.js", function(){
-				var $tunes = $("code.language-abctune");
+			$.getScript("https://cdn.rawgit.com/iacchus/abcjs/master/bin/abcjs_basic_latest-min.js", function(){
+				var tunes_code = $("code.language-abc");
 					
-				for(var $i=0; $tunes[$i]; $i++)
+				for(var $i=0; tunes_code[$i]; $i++)
 				{               
-					$("<div id=\"abctune-"+ $i +"\" class=\"abctune-rendered\"></div>").insertAfter($tunes[$i]);
+					$("<div id=\"abctune-"+ $i +"\" class=\"abctune-rendered\"></div>").insertBefore(tunes_code[$i]);
 					ABCJS.renderAbc(
 						"abctune-"+$i, //container
-						$($tunes[$i]).text(), //abctune
+						$(tunes_code[$i]).text(), //abctune
 						{}, //parserParams
 						{ staffwidth: 620 }, //engraverParams
 						{} //renderParams
 						);
-					$($tunes[$i]).hide();
+					$(tunes_code[$i]).hide();
 				}
 			});
 		}
