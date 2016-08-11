@@ -30,8 +30,8 @@ var $authorhead = $('#author-head');
 					
 				for(var $i=0; tunes_code[$i]; $i++)
 				{               
-					ws_strip="";
-					mystr="";
+					var ws_strip="";
+					var mystr="";
 
 					ws_strip = tunes_code[$1].text().split('\n');
 					for(aaa=0; ws_strip[aaa]; aaa++) { mystr+=ws_strip[aaa].trim() + "\n"; }
