@@ -34,7 +34,7 @@ var $authorhead = $('#author-head');
 					mystr="";
 
 					ws_strip = tunes_code[$1].text().split('\n');
-					for(aaa=0, ws_strip[aaa]; aaa++) { mystr+=ws_strip[aaa].trim() + "\n"; }
+					for(aaa=0; ws_strip[aaa]; aaa++) { mystr+=ws_strip[aaa].trim() + "\n"; }
 					
 					$(tunes_code[$i]).text(mystr), //abctune
 
