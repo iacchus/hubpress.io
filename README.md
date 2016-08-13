@@ -1,4 +1,4 @@
-![Iago Mercúrio](https://iacchus.github.io/images/userbar.png)
+[![Iago Mercúrio](https://iacchus.github.io/images/userbar.png)](https://iacchus.github.io/)
 
 # The Leet Crafting
 
