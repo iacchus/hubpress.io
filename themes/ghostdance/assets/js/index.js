@@ -49,33 +49,6 @@ var $authorhead = $('#author-head');
 			}
 		}
 
-	/*	if($("code.language-abc").length)
-		{
-			$.getScript("https://cdn.rawgit.com/iacchus/abcjs/master/bin/abcjs_basic_latest-min.js", function(){
-				var tunes_code = $("code.language-abc");
-					
-				for(var $i=0; tunes_code[$i]; $i++)
-				{               
-					var ws_strip="";
-					var mystr="";
-
-					ws_strip = $(tunes_code[$i]).text().split('\n');
-					for(var aaa=0; ws_strip[aaa]; aaa++) { mystr+=ws_strip[aaa].trim() + "\n"; }
-					
-					$(tunes_code[$i]).text(mystr), //abctune
-
-					$("<div id=\"abctune-"+ $i +"\" class=\"abctune-rendered\"></div>").insertBefore(tunes_code[$i]);
-					ABCJS.renderAbc(
-						"abctune-"+$i, //container
-						$(tunes_code[$i]).text(), //abctune
-						{}, //parserParams
-						{ staffwidth: 620 }, //engraverParams
-						{} //renderParams
-						);
-					//$(tunes_code[$i]).hide();
-				}
-			});
-		}*/
 		var myrepo = window.location.host
 		var myuser = myrepo.split(".")[0]
 
@@ -92,12 +65,8 @@ var $authorhead = $('#author-head');
 		{
 			$.get(myurl,
 				function(response) {
-					//$(el).contents().find("body").append("<style type=\"text/css\">body{padding:33px;}</style>");
-					// if you want Jupyter Notebook to have template's theme, uncomment the line below
-					//$(el).contents().find("head").append('<link rel="stylesheet" type="text/css" href="' + mycsss +'/screen.css" />');
 					$(el).contents().find("body").append('<link rel="stylesheet" type="text/css" href="' + mycsss +'/screen.css" />');
 					
-					//$(el).contents().find("head").append('<link rel="stylesheet" type="text/css" href="' + mycsss +'/ipynb-custom.css" />');
 					$(el).contents().find("body").append('<link rel="stylesheet" type="text/css" href="' + mycsss +'/ipynb-custom.css" />');
 
 					$(el).contents().find('body').append(response);
@@ -109,32 +78,14 @@ var $authorhead = $('#author-head');
 		$("iframe.ipynb-embed").each(function(){
 			var filename = $(this).data("filename");
 
-			// https://rawgit.com - not affiliated with GITHUB but a good service
-			//var myurl = "https://cdn.rawgit.com/" + myuser + "/" + myrepo + "/master/ipynb-html/" + filename + "?v=" + mycommit ;
 			var myurl = "https://" + myrepo  +  "/ipynb-html/" + filename;
 
 			mydothis(this, myurl, mycsss)
-
-		//	console.log("el:" + this + " myurl: " + myurl);
 		});
         
         // FitVids for responsive videos
         $('.post-content').fitVids();
 	 
-		/*$postholder.each(function (e) {
-			if(e % 2 != 0)
-				$(this).addClass("odd");
-		});*/
-
-		/*$postafter.each(function (e) {
-			var bg = $(this).parent().css('background-color')
-			$(this).css('border-top-color', bg);
-
-			if (e % 2 == 0) {
-				$(this).addClass("even");
-			}
-		});*/
-		
 		$('.btn.first').click( function () {
 			srcTo($first);
 		});
@@ -172,8 +123,6 @@ var $authorhead = $('#author-head');
 				var h = $sitehead.offset().top + $(this).height()-100;
 				
                 
-    		//	$sitehead.css("background-position-y");
-                
 				if(w >= g && w<=h) {
 					$('.fixed-nav').fadeOut('fast');
 				} else if($(window).width() > 1130) {
@@ -200,30 +149,8 @@ var $authorhead = $('#author-head');
 			});
 		}
 
-		/*$('ul li').before('<span class="bult fa fa-asterisk icon-asterisk"></span>');
-		$('blockquote p').prepend('<span class="quo icon-quote-left"></span>');
-		$('blockquote p').append('<span class="quo icon-quote-right"></span>');*/
-
-
 	});
 	
-	/*$post.each(function () {
-		var postText = $(this).html();
-		var fa  = [];
-		for(var i=0; i < icons.length; i++) {
-			fa[i]       = {};
-			fa[i].str   = "@"+ icons[i]+ "@";
-			fa[i].icon  = icons[i];
-			fa[i].int   = postText.search(fa[i].str);
-
-			if(fa[i].int > -1 ) { 
-				fa[i].count = postText.match(new RegExp(fa[i].str,"g")).length;
-				for(var j=0; j < fa[i].count; j++) {
-					$(this).html($(this).html().replace(fa[i].str, "<i class='fa "+fa[i].icon+"'></i>"))
-				}
-			}
-		}
-	});*/
 	
 
 }(jQuery));

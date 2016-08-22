@@ -91,13 +91,11 @@ Example, for embedding Morrison's jig score you can create a abc notation code b
     g3 gfe|def g2d|edc d2A|BAG FED|
     ```
 
-For this it uses [ABCJS](https://github.com/paulrosen/abcjs) script using [rawgit.com](https://rawgit.com) as third party service for serving the JS.
+For this it uses [ABCJS](https://github.com/paulrosen/abcjs) script.
 
 ## Jupyter / iPython Notebook (html) Embed
 
 This theme allows to embed iPython Notebooks (exported as `.html`)
-
-It uses [rawgit.com](https://rawgit.com) (third-party service not affiliated to GitHub) to serve the embeds. It is a very good service tho.
 
 1. At your HubPress blog repo **root directory**, create a directory name `ipynb-html/`.
 2. Put there the notebooks you want to embed, as you would do with images. Commit and push to GitHub.
