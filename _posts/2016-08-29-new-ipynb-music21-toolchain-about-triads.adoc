@@ -1,4 +1,4 @@
-= new ipynb about triads
+= new ipynb ─music21 toolchain─ about triads
 
 ++++
 <iframe class="ipynb-embed" data-filename="toolchain-003-triads.html"></iframe>
