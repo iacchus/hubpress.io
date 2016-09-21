@@ -837,9 +837,11 @@ a[title]:hover:after
     display: none;
 }
 a.fn-item {
+    font-weight: bold;
     display: block;
     cursor: pointer;
     transition: font-weight 0.2s ease;
+    background-color: #336;
 }
 .white {
     color: white;
@@ -851,8 +853,10 @@ a.fn-item:hover {
 }
 a.fn-item.active {
     //color: #86c440;
-    font-weight: bold;
+    //font-weight: bold;
     transition: font-weight 0.2s ease;
+    padding: 0.2rem 0.4rem;
+    color: #fff;
 
 }
 
