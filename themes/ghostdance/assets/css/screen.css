@@ -857,7 +857,7 @@ a.fn-item.active {
     transition: font-weight 0.2s ease;
     color: #fff;
     background-color: #336;
-    border-radius: #fff;
+    border-radius: 2px;
 
 }
 
