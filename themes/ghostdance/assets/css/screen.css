@@ -852,7 +852,7 @@ a.fn-item:hover {
 }
 a.fn-item.active {
     color: #fff;
-    background-color: #336;
+    background-color: #669;
     border-radius: 2px;
     padding-left: 7px;
 
