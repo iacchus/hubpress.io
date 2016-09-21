@@ -840,19 +840,21 @@ a.fn-item {
     display: block;
     cursor: pointer;
     padding: 0.2rem 0.4rem;
-    letter-spacing -0.2px;
+    letter-spacing -0.3px;
 }
 .white {
     color: white;
 }
 a.fn-item:hover {
     font-weight: bold;
-    transition: font-weight 0.2s ease;
+    padding-left: 7px;
+
 }
 a.fn-item.active {
     color: #fff;
     background-color: #336;
     border-radius: 2px;
+    padding-left: 7px;
 
 }
 
