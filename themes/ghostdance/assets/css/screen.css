@@ -833,28 +833,23 @@ a[title]:hover:after
     line-height: 130%;
     font-weight: normal;
     color: #222;
-    //color: rgba(0,0,0,0.7);
     display: none;
 }
 a.fn-item {
     font-weight: bold;
     display: block;
     cursor: pointer;
-    transition: font-weight 0.2s ease;
     padding: 0.2rem 0.4rem;
+    letter-spacing -0.2px;
 }
 .white {
     color: white;
 }
 a.fn-item:hover {
-    //color: #9fd067;
     font-weight: bold;
     transition: font-weight 0.2s ease;
 }
 a.fn-item.active {
-    //color: #86c440;
-    //font-weight: bold;
-    transition: font-weight 0.2s ease;
     color: #fff;
     background-color: #336;
     border-radius: 2px;
