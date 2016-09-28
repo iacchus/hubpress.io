@@ -1,5 +1,0 @@
-= Testing Jupyter Embed with Midi
-
-++++
-<iframe class="ipynb-embed" data-filename="Scales.html"></iframe>
-++++
