@@ -1,5 +1,0 @@
-= More Stuff Implementing html ipython notebook in HubPress
-
-++++
-<iframe class="ipynb-embed" data-filename="Untitled3.html"></iframe>
-++++
