@@ -1,5 +1,0 @@
-= Developing music21 Toolchain for Greek Modes
-
-++++
-<iframe class="ipynb-embed" data-filename="toolchain-001.html"></iframe>
-++++
