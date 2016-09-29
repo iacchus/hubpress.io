@@ -1,0 +1,9 @@
+= The Leet Crafting
+:hp-tags: weblog, tlc, notes
+
+The Leet Crafting
+
+A weblog on philosophy and arts.
+
+We hope to develop this introduction later.
+
