@@ -1075,7 +1075,7 @@ article.tag-draft > section.post-content:before
     position: relative;
     margin: 6rem 0 0 0;
     padding: 6rem 0 0 0;
-    border-top: #cccccc 1px solid;
+    //border-top: #cccccc 1px solid;
 }
 
 .post-footer h2 {
