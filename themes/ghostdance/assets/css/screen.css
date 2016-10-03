@@ -185,8 +185,8 @@ a.btn {
     -webkit-border-radius: 6px;
     color: white;
     display: inline-block;
-    font-size: 16px;
-    letter-spacing: 1px;
+    font-size: 1.4rem;
+    //letter-spacing: 1px;
     margin: 0;
     overflow: visible;
     padding: 10px 20px 10px 20px;
@@ -905,8 +905,9 @@ a.fn-item.active {
 }
 
 .post-meta, .post-meta a {
-    color: #777;
+    color: #999;
     text-decoration: none;
+    text-shadow: 1px 1px 3px #ccc;;
 }
 /*.odd .post-meta, .odd .post-meta a {
     color: white;
