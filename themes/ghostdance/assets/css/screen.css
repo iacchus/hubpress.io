@@ -207,7 +207,7 @@ a.btn {
 }
 
 a.btn:hover {
-    background: rgba(0,0,0,0.3);
+//    background: rgba(0,0,0,0.3);
 }
 
 a.btn span { 
