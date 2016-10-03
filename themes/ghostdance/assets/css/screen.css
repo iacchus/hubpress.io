@@ -1121,11 +1121,11 @@ article.tag-draft > section.post-content:before
 .author-meta a {
     color: #333;
     text-decoration: none;
-    font-weight: 400;
+    //font-weight: 400;
 }
 .author-meta a:hover {
     color: #555;
-    font-weight: 400;
+    //font-weight: 400;
 }
 
 .author-meta > div {
