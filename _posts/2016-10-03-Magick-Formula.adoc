@@ -1,5 +1,5 @@
 = Magick Formula
 
-This is our magickal, magical affirmation made from April to October (now) and goind on.
+This is our magickal, magical affirmation made from April to October (now) and going on.
 
-![I. M. Magical Affirmation](images/iacchus-mercurius-formula-coitus.png)
+image::iacchus-mercurius-formula-coitus.png[]
