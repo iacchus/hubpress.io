@@ -905,7 +905,7 @@ a.fn-item.active {
 }
 
 .post-meta, .post-meta a {
-    color: #999;
+    color: #000;
     text-decoration: none;
     text-shadow: 1px 1px 3px #ccc;;
 }
