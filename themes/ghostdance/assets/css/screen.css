@@ -180,7 +180,7 @@ a:hover {
 a.btn {
     
     text-decoration: none;
-    background-color: #800080;
+  //  background-color: #800080;
  //   border-radius: 6px;
     -webkit-border-radius: 6px;
     color: white;
@@ -196,16 +196,18 @@ a.btn {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     font-weight: lighter;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
     height: 30px;
     outline: none;
+
+    font-style: italic;
 
     border-radius: 2px;
     box-shadow: 2px 2px #300030;
 }
 
 a.btn:hover {
-    background: #86c440;
+    background: rgba(0,0,0,0.3);
 }
 
 a.btn span { 
