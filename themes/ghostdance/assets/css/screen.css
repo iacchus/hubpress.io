@@ -905,7 +905,7 @@ a.fn-item.active {
 }
 
 .post-meta, .post-meta a {
-    color: #333;
+    color: #777;
     text-decoration: none;
 }
 /*.odd .post-meta, .odd .post-meta a {
@@ -914,7 +914,9 @@ a.fn-item.active {
 }*/
 
 .post-meta a:hover {
+    font-weight: normal;
     text-decoration: underline;
+    color: #000;
 }
 
 .post-thumb {
