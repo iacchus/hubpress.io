@@ -203,7 +203,7 @@ a.btn {
     font-style: italic;
 
     border-radius: 2px;
-    box-shadow: 2px 2px #300030;
+    //box-shadow: 2px 2px #300030;
 }
 
 a.btn:hover {

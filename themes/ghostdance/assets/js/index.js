@@ -86,18 +86,11 @@ var $authorhead = $('#author-head');
         // FitVids for responsive videos
         $('.post-content').fitVids();
 	 
-		$('.btn.first').click( function () {
-			srcTo($first);
-		});
-		$('.btn.last').click( function () {
-			srcTo($last);
-		});
-		$('#header-arrow').click(function () {
-			srcTo($first);
-		});
-        $('#totop-arrow').click(function () {
-            srcTo($sitehead);
-        });
+	$('#site-head').click( function () { srcTo($first); });
+	$('.btn.first').click( function () { srcTo($first); });
+	$('.btn.last').click( function () { srcTo($last); });
+	$('#header-arrow').click(function () { srcTo($first); });
+        $('#totop-arrow').click(function () { srcTo($sitehead); });
 
 		$('.post-title').each(function () {
 			var t = $(this).text();
