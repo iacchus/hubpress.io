@@ -1113,9 +1113,9 @@ article.tag-draft > section.post-content:before
     font-size: 1.3rem;
     line-height: 1;
     /*font-style: italic;*/
-    font-family: 'Oswald', 'Open Sans Condensed', sans-serif !important;
+    font-family: 'Open Sans Condensed', sans-serif !important;
     color: #333;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 .author-meta a {
