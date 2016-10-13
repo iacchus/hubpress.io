@@ -12,14 +12,14 @@
     "postsPerPage": "12"
   },
   "socialnetwork": {
-    "email": "my@email.com",
-    "twitter": "https://twitter.com/",
-    "googleplus": "https://plus.google.com/",
-    "linkedin": "https://linkedin.com",
-    "facebook": "http://facebook.com/",
-    "flickr": "https://flickr.com",
-    "instagram": "https://instagram.com",
-    "pinterest": "https://pinterest.com",
+    "email": "",
+    "twitter": "",
+    "googleplus": "",
+    "linkedin": "",
+    "facebook": "",
+    "flickr": "",
+    "instagram": "",
+    "pinterest": "",
     "github": "https://github.com/iacchus"
   },
   "theme": {
