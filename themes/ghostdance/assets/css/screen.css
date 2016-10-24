@@ -700,7 +700,7 @@ li.footnote > p {
     font-family: 'Old Standard TT', sans-serif;
     font-size: 5rem;
     letter-spacing: -0.2rem;
-    color: rgba(0,0,0,0.85);
+    color: rgba(0,0,0,1);
     text-shadow: 1px 1px 6px rgba(255,255,255,0.4);
 }
 
