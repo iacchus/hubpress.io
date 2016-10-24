@@ -247,6 +247,10 @@ p, ul, ol {
     margin: 1em 0;
 }
 
+p {
+    line-height: 2.2rem;
+}
+
 ol ol, ul ul,
 ul ol, ol ul {
     margin: 0.4em 0;
