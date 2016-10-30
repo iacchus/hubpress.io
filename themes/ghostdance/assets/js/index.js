@@ -12,6 +12,8 @@ var $sitehead = $('#site-head');
 
 var $authorhead = $('#author-head');
 
+var allow_ipynb = false
+var allow_abctunes = true
 
 /* Globals jQuery, document */
 (function ($) {
@@ -23,7 +25,7 @@ var $authorhead = $('#author-head');
 	}
 	$(document).ready(function(){
 
-		if($("code.language-abc").length)
+		if($("code.language-abc").length && allow_abctunes)
 		{
 			var tunes_code = $("code.language-abc");
 				
@@ -49,39 +51,41 @@ var $authorhead = $('#author-head');
 			}
 		}
 
-		var myrepo = window.location.host
-		var myuser = myrepo.split(".")[0]
+		if(allow_ipynb){
+			var myrepo = window.location.host
+			var myuser = myrepo.split(".")[0]
 
-		var myhack = document.styleSheets[0].href
-		var mysplit = myhack.split("?")[1]
-		var mycommit = mysplit.split("=")[1]
+			var myhack = document.styleSheets[0].href
+			var mysplit = myhack.split("?")[1]
+			var mycommit = mysplit.split("=")[1]
 
-		var myothersplit = myhack.split("?")[0]
-		var myanothersplit = myothersplit.split("/")
-		var myassets = Array( myanothersplit[3], myanothersplit[4], myanothersplit[5]).join("/");
-		var mycsss = "https://" + myrepo + "/" + myassets + "/css"
- 
-		function mydothis(el, myurl, mycsss)
-		{
-			$.get(myurl,
-				function(response) {
-					$(el).contents().find("body").append('<link rel="stylesheet" type="text/css" href="' + mycsss +'/screen.css" />');
-					
-					$(el).contents().find("body").append('<link rel="stylesheet" type="text/css" href="' + mycsss +'/ipynb-custom.css" />');
+			var myothersplit = myhack.split("?")[0]
+			var myanothersplit = myothersplit.split("/")
+			var myassets = Array( myanothersplit[3], myanothersplit[4], myanothersplit[5]).join("/");
+			var mycsss = "https://" + myrepo + "/" + myassets + "/css"
+	 
+			function mydothis(el, myurl, mycsss)
+			{
+				$.get(myurl,
+					function(response) {
+						$(el).contents().find("body").append('<link rel="stylesheet" type="text/css" href="' + mycsss +'/screen.css" />');
+						
+						$(el).contents().find("body").append('<link rel="stylesheet" type="text/css" href="' + mycsss +'/ipynb-custom.css" />');
 
-					$(el).contents().find('body').append(response);
-					$(el).height( $(el).contents().height() );	
-				},
-				"html"
-			);
+						$(el).contents().find('body').append(response);
+						$(el).height( $(el).contents().height() );	
+					},
+					"html"
+				);
+			}
+			$("iframe.ipynb-embed").each(function(){
+				var filename = $(this).data("filename");
+
+				var myurl = "https://" + myrepo  +  "/ipynb-html/" + filename;
+
+				mydothis(this, myurl, mycsss)
+			});
 		}
-		$("iframe.ipynb-embed").each(function(){
-			var filename = $(this).data("filename");
-
-			var myurl = "https://" + myrepo  +  "/ipynb-html/" + filename;
-
-			mydothis(this, myurl, mycsss)
-		});
         
         // FitVids for responsive videos
         $('.post-content').fitVids();
