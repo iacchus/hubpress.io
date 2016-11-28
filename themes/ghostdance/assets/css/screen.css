@@ -396,8 +396,8 @@ pre.highlight {
     overflow: auto;
     background-color: #fff;
     color: #333;
-    border-radius: 2px;
-    //border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 1px;
+    border: 1px solid #bbb;
     //text-shadow: 1px 1px rgba(0,0,0,0.6);
 }
 
