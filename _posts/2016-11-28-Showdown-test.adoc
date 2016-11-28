@@ -8,4 +8,4 @@ ok
 
 and this is an `inline` block.
 
-Link : [A Dança dos Espíritos](iacchus.github.com)
+Link : [A Dança dos Espíritos](http://iacchus.github.com)
