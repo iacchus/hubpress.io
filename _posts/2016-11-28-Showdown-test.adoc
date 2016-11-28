@@ -1,0 +1,9 @@
+= Showdown test
+
+This is a **showdown** test!!
+
+```
+ok
+```
+
+and this is an `inline` block.
