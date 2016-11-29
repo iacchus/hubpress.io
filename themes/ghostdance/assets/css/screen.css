@@ -585,6 +585,7 @@ li.footnote > p {
     //height: 100%;
     margin: 0;
     padding: 1.4rem;
+    padding-bottom: 5.4rem;
     text-align: center;
     color: #555;
     background: #f8f8f8 no-repeat center center;
@@ -1030,6 +1031,33 @@ a.fn-item.active {
     -webkit-animation: none;
     animation: none;
 }
+
+#tag-arrow {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -16px;
+    width: 34px;
+    height: 34px;
+    font-size: 34px;
+    text-align: center;
+    text-decoration: none;
+    color: #555;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-animation: bounce 4s 2s infinite;
+    animation: bounce 4s 2s infinite;
+}
+
+/* Stop it bouncing and increase contrast when hovered */
+#tag-arrow:hover {
+    color: #666;
+    -webkit-animation: none;
+    animation: none;
+}
+
 
 /* ==========================================================================
    5. Single Post - When you click on an individual post
