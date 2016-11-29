@@ -1106,9 +1106,11 @@ article.tag-draft > section.post-content:before
 /* The author credit area after the post */
 .post-footer {
     position: relative;
-    margin: 6rem 0 0 0;
-    padding: 6rem 0 0 0;
-    //border-top: #cccccc 1px solid;
+    margin: 6rem 0 3rem 0;
+    padding: 2rem 6rem 6rem 6rem;
+
+    border-top: 1px solid #e0e0e0;
+    background: #f8f8f8 no-repeat center center;
 }
 
 .post-footer h2 {
@@ -1135,12 +1137,12 @@ article.tag-draft > section.post-content:before
     padding: 0;
     margin: 0;
     list-style: none;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     line-height: 1;
     /*font-style: italic;*/
-    font-family: 'Open Sans Condensed', sans-serif !important;
+    font-family: 'PT Sans Narrow', 'Open Sans Condensed', sans-serif !important;
     color: #333;
-    font-weight: bold;
+    //font-weight: bold;
 }
 
 .author-meta a {
@@ -1151,6 +1153,7 @@ article.tag-draft > section.post-content:before
 .author-meta a:hover {
     color: #555;
     //font-weight: 400;
+    font-weight: normal;
 }
 
 .author-meta > div {
@@ -1820,10 +1823,10 @@ width: 40%;
     height: 80px;
     border-radius: 100%;
     overflow: hidden;
-    padding: 6px;
+    //padding: 6px;
     background: #fff;
     z-index: 2;
-    box-shadow: #cccccc 0 0 0 1px;
+    //box-shadow: #cccccc 0 0 0 1px;
 }
 
 .author-image .img {
