@@ -597,15 +597,6 @@ li.footnote > p {
     text-decoration: none;
 }
 
-.tag-title {
-    margin: 1rem 0 2rem 0;
-    font-family: 'Old Standard TT', sans-serif;
-    font-size: 5rem;
-    letter-spacing: -0.2rem;
-    color: rgba(0,0,0,1);
-    text-shadow: 1px 1px 6px rgba(255,255,255,0.4);
-}
-
 .tag-description {
     margin: 0;
     font-size: 1.8rem;
