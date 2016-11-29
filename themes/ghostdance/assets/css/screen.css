@@ -1134,7 +1134,7 @@ article.tag-draft > section.post-content:before
 /* The author credit area after the post */
 .post-footer {
     position: relative;
-    margin: 6rem 0 3rem 0;
+    margin: 11rem 0 3rem 0;
     padding: 2rem 6rem 6rem 6rem;
 
     border-top: 1px solid #e0e0e0;
