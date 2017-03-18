@@ -1,7 +1,6 @@
 = Poesia, Técnica, Ritmo
-:hp-tags: leetcraft, arte, 
+:hp-tags: leetcraft, arte
 
-[quote, Iacchus Mercurius, sobre Arte]
 ___
 O dedo prende a corda, +
 o arco a ataca; +
