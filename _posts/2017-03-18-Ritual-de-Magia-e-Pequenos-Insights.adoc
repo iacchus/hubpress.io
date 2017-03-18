@@ -1,4 +1,5 @@
-= Ritual de Magia e Adendo (Pequenos Insights)
+= Ritual de Magia (e Pequenos Insights)
+:hp-tags: leetcraft, iacchus, magick
 
 == Magikal Formula 
 
