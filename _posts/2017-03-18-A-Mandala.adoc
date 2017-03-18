@@ -1,4 +1,4 @@
 = A Mandala
-:hp-tags: leetcraft, técnologia mágicka
+:hp-tags: leetcraft, tecnologia mágicka
 
 Escreva (crie) uma meta-realidade em que tua Verdadeira Vontade seja expressada em méritos: “sou um violinista que pela apresentação da minha Arte crio uma energia chamada Talidade que me torna uma estrela: capaz de irradiar luz sem artifícios”.
