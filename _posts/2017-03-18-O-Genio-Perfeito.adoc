@@ -1,4 +1,5 @@
 = O Gênio Perfeito
+:hp-tags: leetcraft, filosofia
 
 O ponto sólido que o homem possui (para entender o funcionamento de si e do mundo) é o **gênio**. Que o ser humano contemple o gênio humano, o homem extraordinário.
 
