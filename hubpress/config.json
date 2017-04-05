@@ -35,5 +35,15 @@
     "hubpress": "https://iacchus.github.io",
     "theme": "//iacchus.github.io/themes/ghostdance",
     "images": "https://iacchus.github.io/images"
+  },
+  "initialisationConfigComponent": {
+    "name": "initialise-configuration",
+    "computed": {},
+    "methods": {},
+    "staticRenderFns": [
+      null,
+      null,
+      null
+    ]
   }
 }
