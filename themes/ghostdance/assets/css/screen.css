@@ -716,9 +716,10 @@ li.footnote > p {
     //font-size: 5rem;
     font-size: 4rem;
     //letter-spacing: -0.3rem;
+    font-weight: normal;
     letter-spacing: initial;
     color: rgba(0,0,0,1);
-    text-shadow: 1px 1px 6px rgba(255,255,255,0.4);
+    text-shadow: 1px 1px 6px rgba(255,255,255,0.85);
 }
 
 .post-title {
@@ -755,7 +756,7 @@ li.footnote > p {
     font-family: 'PT Sans Narrow', serif;
     letter-spacing: 0;
     color: #ddd;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+    text-shadow: 1px 1px 1px #000;
 }
 
 span .blog-description #results a {
