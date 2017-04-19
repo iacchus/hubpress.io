@@ -719,7 +719,7 @@ li.footnote > p {
     font-weight: normal;
     letter-spacing: initial;
     color: rgba(0,0,0,1);
-    text-shadow: 1px 1px 6px rgba(255,255,255,0.85);
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
 }
 
 .post-title {
