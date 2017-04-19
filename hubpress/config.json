@@ -11,7 +11,7 @@
     "logo": "",
     "cover": "images/wallhaven-413234.jpg",
     "postsPerPage": "12",
-    "delay": "",
+    "delay": "1000",
     "googleAnalytics": "",
     "disqus": ""
   },
