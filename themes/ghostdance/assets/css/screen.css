@@ -90,8 +90,7 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    //font-family: 'Old Standard TT', serif;
-    font-family: 'Roboto', serif;
+    font-family: 'Old Standard TT', serif;
     font-size: 1.8rem;
     //line-height: 1.4em;
     color: #222;
