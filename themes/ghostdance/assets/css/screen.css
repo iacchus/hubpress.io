@@ -90,7 +90,8 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: 'Old Standard TT', serif;
+    //font-family: 'Old Standard TT', serif;
+    font-family: 'Roboto', serif;
     font-size: 1.8rem;
     //line-height: 1.4em;
     color: #222;
@@ -727,7 +728,8 @@ li.footnote > p {
 }
 
 .post-content {
-	font-family: 'Inconsolata', monospace;
+	//font-family: 'Inconsolata', monospace;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1.6rem;
 }
 .presents {
