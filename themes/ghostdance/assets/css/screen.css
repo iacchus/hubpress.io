@@ -755,8 +755,8 @@ li.footnote > p {
     font-weight: 300;
     font-family: 'PT Sans Narrow', serif;
     letter-spacing: 0;
-    color: #ddd;
-    text-shadow: 1px 1px 1px #000;
+    color: #fff;
+    text-shadow: 1px 1px 0px #000;
 }
 
 span .blog-description #results a {
