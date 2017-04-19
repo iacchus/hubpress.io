@@ -711,7 +711,8 @@ li.footnote > p {
 /* The details of your blog. Defined in ghost/settings/ */
 .blog-title {
     margin: 1rem 0 2rem 0;
-    font-family: 'Old Standard TT', sans-serif;
+    //font-family: 'Old Standard TT', sans-serif;
+    font-family: 'IM Fell Great Primer', sans-serif;
     //font-size: 5rem;
     font-size: 4rem;
     //letter-spacing: -0.3rem;
