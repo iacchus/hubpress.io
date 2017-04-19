@@ -713,8 +713,9 @@ li.footnote > p {
 .blog-title {
     margin: 1rem 0 2rem 0;
     font-family: 'Old Standard TT', sans-serif;
-    font-size: 5rem;
-    letter-spacing: -0.2rem;
+    //font-size: 5rem;
+    font-size: 4.4rem;
+    letter-spacing: -0.3rem;
     color: rgba(0,0,0,1);
     text-shadow: 1px 1px 6px rgba(255,255,255,0.4);
 }
