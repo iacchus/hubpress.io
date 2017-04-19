@@ -9,9 +9,9 @@
     "title": "The Philosopher's Workbench",
     "description": "Humanties, Idea Forging, and Metanoia",
     "logo": "",
-    "cover": "images/wallhaven-413234.jpg",
+    "cover": "images/coverplz.jpg",
     "postsPerPage": "12",
-    "delay": "1000",
+    "delay": "",
     "googleAnalytics": "",
     "disqus": ""
   },
