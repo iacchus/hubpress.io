@@ -732,6 +732,7 @@ li.footnote > p {
 	//font-family: 'Inconsolata', monospace;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.4rem;
+	color: #000;
 }
 .presents {
 	margin-bottom: 1.4rem;
