@@ -917,6 +917,10 @@ a.fn-item.active {
 	color: #336;
 	font-weight: bold;
 }
+
+#about-side:first-child {margin-top:0;}
+#about-side:last-child {margin-bottom:0;}
+
 .post-after {
     position: absolute;
     bottom: -51px;
