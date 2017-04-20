@@ -897,7 +897,15 @@ a.fn-item.active {
     padding-left: 7px;
 
 }
+#about-side {
+    background-color: rgba(200,200,200,0.3);
+    border: 1px solid #dedede;
+    padding: 5px;
+    margin-top: 30px;
 
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+}
 .post-after {
     position: absolute;
     bottom: -51px;

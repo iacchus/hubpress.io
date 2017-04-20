@@ -148,6 +148,6 @@ var allow_abctunes = true
 
 	});
 	
-	
+	$('#about-side').load('about-side.html');	
 
 }(jQuery));
