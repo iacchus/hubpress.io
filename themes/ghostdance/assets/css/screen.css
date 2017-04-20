@@ -899,12 +899,23 @@ a.fn-item.active {
 }
 #about-side {
     background-color: rgba(200,200,200,0.3);
-    border: 1px solid #dedede;
-    padding: 5px;
+    border: 1px solid rgba(200,200,200,0.4);
+    padding: 0.5rem;
     margin-top: 30px;
 
     font-family: 'Roboto', sans-serif;
-    color: #000;
+    font-size: 1.3rem;
+    text-transform: none;
+    color: #333;
+
+    border-radius: 1px;
+
+}
+
+#about-side a {
+	text-decoration: none;
+	color: #336;
+	font-weight: bold;
 }
 .post-after {
     position: absolute;
