@@ -909,7 +909,7 @@ a.fn-item.active {
     font-size: 1.2rem;
 
     text-transform: none;
-    color: #;
+    color: #000;
 
     border-radius: 1px;
 
@@ -921,7 +921,7 @@ a.fn-item.active {
 	font-weight: bold;
 }
 
-#about:side p { margin: 0.3rem; line-height: 1.2rem!important; }
+#about-side p { margin: 0.7rem; line-height: 1.2rem; }
 #about-side p:first-child {margin-top:0;}
 #about-side p:last-child {margin-bottom:0;}
 
