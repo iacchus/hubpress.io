@@ -907,6 +907,8 @@ a.fn-item.active {
 
     font-family: 'Roboto', sans-serif;
     font-size: 1.4rem;
+    line-height: 1.4rem;
+
     text-transform: none;
     color: #333;
 
@@ -920,8 +922,9 @@ a.fn-item.active {
 	font-weight: bold;
 }
 
-#about-side:first-child {margin-top:0;}
-#about-side:last-child {margin-bottom:0;}
+#about:side p { margin: 0.3rem; }
+#about-side p:first-child {margin-top:0;}
+#about-side p:last-child {margin-bottom:0;}
 
 .post-after {
     position: absolute;
