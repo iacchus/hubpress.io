@@ -898,13 +898,15 @@ a.fn-item.active {
 
 }
 #about-side {
-    background-color: rgba(200,200,200,0.3);
-    border: 1px solid rgba(200,200,200,0.4);
+    //background-color: rgba(200,200,200,0.3);
+    //border: 1px solid rgba(200,200,200,0.4);
+    background-color: #eee; 
+    border: 1px solid #ddd;
     padding: 0.5rem;
     margin-top: 30px;
 
     font-family: 'Roboto', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     text-transform: none;
     color: #333;
 
