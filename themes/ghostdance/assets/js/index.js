@@ -146,9 +146,10 @@ var allow_abctunes = true
 			});
 		}
 
+		$('.fixed-nav').append("<div id='about-side'></div>")
+		$('#about-side').load('about-side.html');	
+
+
 	});
 	
-	$('.fixed-nav').append("<div id='about-side'></div>")
-	$('#about-side').load('about-side.html');	
-
 }(jQuery));
